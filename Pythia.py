@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 import sys
-
+import DatabaseScript 
+import sqlite3
 
 # Author: Nicholas Murray (sorta)
 # Created: 4/18/2021
@@ -9,8 +10,11 @@ import sys
 
 
 if __name__ == "__main__":
+    con = sqlite3.connect('ParkingOracle.db')           # connecting to the database
+    cur = con.cursor()                                  # cursor access
+    keys = []                                           # keys go here  
 
-# ------------------------------- DONT TOCCH ANYTHING BETWEEN THESE LINES --------------------------
+# ------------------------------- DONT TOUCH ANYTHING BETWEEN THESE LINES --------------------------
 # Load Yolo
     net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
     classes = []
@@ -20,59 +24,67 @@ if __name__ == "__main__":
     output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
     colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
+    
+    for item in keys: 
+        # QUERY FOR IMAGE FILE NAME BY KEY GOES HERE 
+        # PULLING IMAGE BY FILE NAME GOES HERE 
+        key = # PULLING CAPACITY BY KEY GOES HERE 
+
     # Loading image
-    img = cv2.imread(sys.argv[1])
-    img = cv2.resize(img, None, fx=0.4, fy=0.4)
-    height, width, channels = img.shape
+        img = cv2.imread(#QUERIED FILE NAME GOES HERE )
+        img = cv2.resize(img, None, fx=0.4, fy=0.4)
+        height, width, channels = img.shape
 
-    # Detecting objects
-    blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+        # Detecting objects
+        blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
 
-    net.setInput(blob)
-    outs = net.forward(output_layers)
+        net.setInput(blob)
+        outs = net.forward(output_layers)
 
-    # Showing informations on the screen
-    class_ids = []
-    confidences = []
-    boxes = []
-    for out in outs:
-        for detection in out:
-            scores = detection[5:]
-            class_id = np.argmax(scores)
-            confidence = scores[class_id]
-            if confidence > 0.5:
-                # Object detected
-                center_x = int(detection[0] * width)
-                center_y = int(detection[1] * height)
-                w = int(detection[2] * width)
-                h = int(detection[3] * height)
+        # Showing informations on the screen
+        class_ids = []
+        confidences = []
+        boxes = []
+        for out in outs:
+            for detection in out:
+                scores = detection[5:]
+                class_id = np.argmax(scores)
+                confidence = scores[class_id]
+                if confidence > 0.5:
+                    # Object detected
+                    center_x = int(detection[0] * width)
+                    center_y = int(detection[1] * height)
+                    w = int(detection[2] * width)
+                    h = int(detection[3] * height)
 
-                # Rectangle coordinates
-                x = int(center_x - w / 2)
-                y = int(center_y - h / 2)
-                boxes.append([x, y, w, h])
-                confidences.append(float(confidence))
-                class_ids.append(class_id)
+                    # Rectangle coordinates
+                    x = int(center_x - w / 2)
+                    y = int(center_y - h / 2)
+                    boxes.append([x, y, w, h])
+                    confidences.append(float(confidence))
+                    class_ids.append(class_id)
 
-    indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
-    print(indexes)
-    font = cv2.FONT_HERSHEY_PLAIN
+        indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
+        font = cv2.FONT_HERSHEY_PLAIN
 
-    count = 0
-    for i in range(len(boxes)):
-        if i in indexes:
-            x, y, w, h = boxes[i]
-            label = str(classes[class_ids[i]])
-            color = colors[class_ids[i]]
-            cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
-            cv2.putText(img, label, (x, y + 30), font, 3, color, 3)
-#-----------------------------------------------------------------------------------------------------------
-# easiest way I've found to only count cars; better solutions may exist 
-            if label == 'car':
-              count += 1
+        count = 0
+        for i in range(len(boxes)):
+            if i in indexes:
+                x, y, w, h = boxes[i]
+                label = str(classes[class_ids[i]])
+                color = colors[class_ids[i]]
+                cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
+                cv2.putText(img, label, (x, y + 30), font, 3, color, 3)
+    #-----------------------------------------------------------------------------------------------------------
+    # easiest way I've found to only count cars; better solutions may exist 
+                if label == 'car' or label == 'truck':
+                count += 1
 
-    print("boxes: " + str(count))
+        DatabaseScript.updateLotData('TestLot' , (count/capacity))
+        DatabaseScript.updateImageData('TestLot', str(sys.argv[1])) 
 
-    cv2.imshow("Image", img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        print("Cars: " + str(count))
+
+        cv2.imshow("Image", img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
