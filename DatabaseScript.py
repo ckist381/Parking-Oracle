@@ -57,6 +57,14 @@ def getCapacity(name):
     print(capacity)
     return capacity
 
+def getKeys():
+    cur.execute("SELECT LotName FROM LotData")
+    keys = cur.fetchall()
+    l = []
+    for item in len(keys):
+        l.append(keys[item][0])
+    return l
+
 def main():
     # variables for test
     lotName = input("Enter the Lot Name: ")
