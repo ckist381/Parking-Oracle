@@ -61,9 +61,21 @@ def getKeys():
     cur.execute("SELECT LotName FROM LotData")
     keys = cur.fetchall()
     l = []
-    for item in range(0, len(keys)):
+    for item in len(keys):
         l.append(keys[item][0])
     return l
+
+def showCapacities():
+   cur.execute("SELECT Lotname , fullnessLevel FROM LotData")
+   fulls = cur.fetchall()
+   
+   for item in range(len(fulls)):
+    print( str(fulls[item][0]) + " : " + str(fulls[item][1]))
+
+   return 
+
+ 
+
 
 def main():
     # variables for test
