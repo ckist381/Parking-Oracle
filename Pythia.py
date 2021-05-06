@@ -13,7 +13,7 @@ if __name__ == "__main__":
     con = sqlite3.connect('ParkingOracle.db')           # connecting to the database
     cur = con.cursor()                                  # cursor access
     keys = DatabaseScript.getKeys()                     # keys go here
-    path = "C:\Users\Nicholas\Desktop\Pythia\Parking-Oracle-main" 
+    path = "C:/Users/lucym/Documents/code/Parking-Oracle-main/Parking-Oracle-main/" 
 
 # ------------------------------- DONT TOUCH ANYTHING BETWEEN THESE LINES --------------------------
 # Load Yolo
@@ -28,11 +28,12 @@ if __name__ == "__main__":
     
     for lotName in keys: 
         filename = DatabaseScript.getImageData(lotName) # QUERY FOR IMAGE FILE NAME BY KEY GOES HERE 
-        path = path + str(filename[lotName]) # PULLING IMAGE BY FILE NAME GOES HERE
-        capacity = getCapacity(lotName)# PULLING CAPACITY BY KEY GOES HERE 
+        newpath = path + str(filename[lotName]) # PULLING IMAGE BY FILE NAME GOES HERE
+        capacity = DatabaseScript.getCapacity(lotName)# PULLING CAPACITY BY KEY GOES HERE 
 
     # Loading image
-        img = cv2.imread(path)
+        img = cv2.imread(newpath)
+        #cv2.imshow('image',img)
         img = cv2.resize(img, None, fx=0.4, fy=0.4)
         height, width, channels = img.shape
 
@@ -79,10 +80,10 @@ if __name__ == "__main__":
     #-----------------------------------------------------------------------------------------------------------
     # easiest way I've found to only count cars; better solutions may exist 
                 if label == 'car' or label == 'truck':
-                count += 1
+                    count += 1
 
         DatabaseScript.updateLotData(lotName , (count/capacity))
-        DatabaseScript.updateImageData(lotName , filename) 
+        #DatabaseScript.updateImageData(lotName , filename) 
 
         print("Cars: " + str(count))
 
