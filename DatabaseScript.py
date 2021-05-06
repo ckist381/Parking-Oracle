@@ -70,7 +70,7 @@ def showCapacities():
    fulls = cur.fetchall()
    
    for item in range(len(fulls)):
-    print( str(fulls[item][0]) + " : " + str(fulls[item][1]))
+       print( str(fulls[item][0]) + " : " + str(fulls[item][1]))
 
    return 
 
