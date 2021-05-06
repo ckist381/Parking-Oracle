@@ -12,7 +12,8 @@ import sqlite3
 if __name__ == "__main__":
     con = sqlite3.connect('ParkingOracle.db')           # connecting to the database
     cur = con.cursor()                                  # cursor access
-    keys = []                                           # keys go here  
+    keys = DatabaseScript.getKeys()                     # keys go here
+    path = "C:\Users\Nicholas\Desktop\Pythia\Parking-Oracle-main" 
 
 # ------------------------------- DONT TOUCH ANYTHING BETWEEN THESE LINES --------------------------
 # Load Yolo
@@ -25,13 +26,13 @@ if __name__ == "__main__":
     colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
     
-    for item in keys: 
-        # QUERY FOR IMAGE FILE NAME BY KEY GOES HERE 
-        # PULLING IMAGE BY FILE NAME GOES HERE 
-        key = # PULLING CAPACITY BY KEY GOES HERE 
+    for lotName in keys: 
+        filename = DatabaseScript.getImageData(lotName) # QUERY FOR IMAGE FILE NAME BY KEY GOES HERE 
+        path = path + str(filename[lotName]) # PULLING IMAGE BY FILE NAME GOES HERE
+        capacity = getCapacity(lotName)# PULLING CAPACITY BY KEY GOES HERE 
 
     # Loading image
-        img = cv2.imread(#QUERIED FILE NAME GOES HERE )
+        img = cv2.imread(path)
         img = cv2.resize(img, None, fx=0.4, fy=0.4)
         height, width, channels = img.shape
 
@@ -80,8 +81,8 @@ if __name__ == "__main__":
                 if label == 'car' or label == 'truck':
                 count += 1
 
-        DatabaseScript.updateLotData('TestLot' , (count/capacity))
-        DatabaseScript.updateImageData('TestLot', str(sys.argv[1])) 
+        DatabaseScript.updateLotData(lotName , (count/capacity))
+        DatabaseScript.updateImageData(lotName , filename) 
 
         print("Cars: " + str(count))
 
