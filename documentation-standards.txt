@@ -1,0 +1,28 @@
+----------------------------------------------
+DOCUMENTATION STANDARDS
+----------------------------------------------
+
+Headings
+     All code files must contain a heading containing the following:
+	- Original Author Name
+	- Date of Creation
+	- Description/Purpose
+	- Filename
+	- Most recently edited/Last Updated By
+
+Function Documentation
+     All functions must contain a heading containing the following:
+	- Signature/Function Name
+	- Description
+	- Intake/Parameters
+	- Output/Return Value
+
+Changelog
+     When making signifigant changes to the git repository list the following information:
+	- What changes were made
+	- When the changes were made
+	- If any files were added
+	- If any files were deleted
+
+Any additional sigifigant changes such as database modification, app file adjustements, or vision system adjustments must also be included in the changelog.txt file.
+     
