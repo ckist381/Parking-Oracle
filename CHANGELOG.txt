@@ -1,4 +1,5 @@
 This is the official changelog for any changes starting 6/1/2021
 -----------------------------------------------------------------
 
-6/15/2021 - Added a folder to upload all the files relating to app development.
+6/15/2021 - Added a folder to upload all the files relating to app development.  
+      NOTE: Does not include the .expo and node module folders that were installed!  
