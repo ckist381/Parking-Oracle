@@ -1,0 +1,207 @@
+{
+    "name": "Parking Lot Image Data",
+    "securityToken": "Parking Lot Image Data Token",
+    "sourceConnection": {
+        "name": "Local Machine",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNzc4MDEzY2M2YmY0NDQ5NjE0ODgxNzNkNGQ4OGQ0YWE3NmYxMzQ5NWZmYzBkMjdjM2NkNTcxYzU2YTU4MjkwOWJjZmVhZGM2NDQ5OWMyNWVmNzAxOTMwM2E5MGE0NmFjY2E0Y2EzMTZhZGE2ZTcwMjdjMmJmMzI3MmQ4Yzg2OTBiOGIxMjhhNjMzNWNjY2EyOWMwMTdkM2UwYmRkYWMzZjkzNmUxNDYyOTJhZDE1ODdiOWQzZGZiNjY0ZjAyZjYyZDc0YjU5NGNhODEwYTI0MDlmYjI2ODRhOTA5YWRlODYiLCJpdiI6ImMxZGJjNjQwNjQ5ZGZhZWM1NGUwMTk5ZTZjMGIxY2RkMzIzODJiNmY0NWRjN2YwNCJ9"
+        },
+        "id": "crTmJKs1M"
+    },
+    "targetConnection": {
+        "name": "Image Data",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiY2I2MjY2NDYxYzlkMTAwNzEwNDg1ZDZkNDE2MjNiMjQ0OWRhMGJlMmYwZjAwNWUxMDg0ZDYyNjM2NDk0NGRkNTM3YWFmYjA1NTVjY2U3MDI5ZmE2YjMxZTQyMTRmMjg2ZThlODc4YzJhMmRkZDQzYmEyMDkzYmI0NTI2OWU4ZGVlN2I1YzQ0ZTc5YTgxNGY1OGRlNDYxMTJiY2U0Yjc0YSIsIml2IjoiOWUwZmQ4ZDAzZGFjM2QyMGI2M2FiNmI2OWNjNjJkMmFiMDcwNDQzNjU0ZjAzZmEzIn0="
+        },
+        "id": "Xuqtkyz44"
+    },
+    "description": "Source Connection is images off of PC. Target connections is to a folder on PC.",
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "car",
+            "color": "#5db300"
+        },
+        {
+            "name": "empty",
+            "color": "#e81123"
+        }
+    ],
+    "id": "C1rHYlDba",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYWU1OWI4OTY4MDkzNGQxMTgxNjFiZGNiODllMjA5NzBmNTkwZDIyOGMyNWMzZjM4MmM4MjcxYjc2Y2U4OTNkMDUzOTIwZjZjYzRjY2E1YzJiMDFiOTdiZTU1NzExMzU2IiwiaXYiOiI5ZDNmNjM1ZjZmZjkyZDViYTRmYTA2YmY1YTY5NDMwNzkyZjg5ZDYxNGZiNjg4Y2QifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "6c31f9298fa4ddf53637f6af832c44b6",
+    "assets": {
+        "6c31f9298fa4ddf53637f6af832c44b6": {
+            "format": "mp4",
+            "id": "6c31f9298fa4ddf53637f6af832c44b6",
+            "name": "Multiple%20Parking%20Lots.mp4",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Multiple%20Parking%20Lots.mp4",
+            "size": {
+                "width": 724,
+                "height": 404
+            },
+            "state": 2,
+            "type": 2
+        },
+        "d90cca752a35d58e3521185b937a1974": {
+            "id": "d90cca752a35d58e3521185b937a1974",
+            "format": "2",
+            "state": 1,
+            "type": 3,
+            "name": "Multiple%20Parking%20Lots.mp4#t=9.2",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Multiple%20Parking%20Lots.mp4#t=9.2",
+            "size": {
+                "width": 724,
+                "height": 404
+            },
+            "parent": {
+                "format": "mp4",
+                "id": "6c31f9298fa4ddf53637f6af832c44b6",
+                "name": "Multiple%20Parking%20Lots.mp4",
+                "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Multiple%20Parking%20Lots.mp4",
+                "size": {
+                    "width": 724,
+                    "height": 404
+                },
+                "state": 1,
+                "type": 2
+            },
+            "timestamp": 9.2
+        },
+        "cf7adbbd6bf17742ad7c9548c544f21c": {
+            "format": "JPG",
+            "id": "cf7adbbd6bf17742ad7c9548c544f21c",
+            "name": "Week1Lot10_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot10_Mike%20Moser.JPG",
+            "size": {
+                "width": 601,
+                "height": 341
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4c4f5c3b0bc8c9bc075e5242edeb582c": {
+            "format": "JPG",
+            "id": "4c4f5c3b0bc8c9bc075e5242edeb582c",
+            "name": "Week1Lot1_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot1_Mike%20Moser.JPG",
+            "size": {
+                "width": 602,
+                "height": 343
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ffdac7accff5050a9b2fbce40094dc97": {
+            "format": "JPG",
+            "id": "ffdac7accff5050a9b2fbce40094dc97",
+            "name": "Week1Lot2_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot2_Mike%20Moser.JPG",
+            "size": {
+                "width": 666,
+                "height": 375
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0c48ceb0bd3de5378b37c01f711896bd": {
+            "format": "JPG",
+            "id": "0c48ceb0bd3de5378b37c01f711896bd",
+            "name": "Week1Lot3_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot3_Mike%20Moser.JPG",
+            "size": {
+                "width": 664,
+                "height": 371
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b11b5a70a8764925eba106d76d4467a5": {
+            "format": "JPG",
+            "id": "b11b5a70a8764925eba106d76d4467a5",
+            "name": "Week1Lot4_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot4_Mike%20Moser.JPG",
+            "size": {
+                "width": 665,
+                "height": 371
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7e9de8db1208e6e59ec86f97208dc18f": {
+            "format": "JPG",
+            "id": "7e9de8db1208e6e59ec86f97208dc18f",
+            "name": "Week1Lot5_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot5_Mike%20Moser.JPG",
+            "size": {
+                "width": 660,
+                "height": 379
+            },
+            "state": 2,
+            "type": 1
+        },
+        "95c66229e3dc15c9d6a55ae4c3dfd6c5": {
+            "format": "JPG",
+            "id": "95c66229e3dc15c9d6a55ae4c3dfd6c5",
+            "name": "Week1Lot6_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot6_Mike%20Moser.JPG",
+            "size": {
+                "width": 669,
+                "height": 376
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5186aed1ec184d0ac11a2ba9825d6d71": {
+            "format": "JPG",
+            "id": "5186aed1ec184d0ac11a2ba9825d6d71",
+            "name": "Week1Lot7_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot7_Mike%20Moser.JPG",
+            "size": {
+                "width": 665,
+                "height": 374
+            },
+            "state": 2,
+            "type": 1
+        },
+        "98cb4d7bf6818f67fc499e55e1524351": {
+            "format": "JPG",
+            "id": "98cb4d7bf6818f67fc499e55e1524351",
+            "name": "Week1Lot8_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot8_Mike%20Moser.JPG",
+            "size": {
+                "width": 665,
+                "height": 371
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d915e9bd9b9c6f88318ae4ac1e3b550d": {
+            "format": "JPG",
+            "id": "d915e9bd9b9c6f88318ae4ac1e3b550d",
+            "name": "Week1Lot9_Mike%20Moser.JPG",
+            "path": "file:C:/Users/Michael/Documents/Spring2021/CSC%20354/Lot%20Images/Week%201%20Shots_Mike%20Moser/Week1Lot9_Mike%20Moser.JPG",
+            "size": {
+                "width": 662,
+                "height": 378
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}
