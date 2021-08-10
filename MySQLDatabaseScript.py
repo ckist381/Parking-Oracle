@@ -38,17 +38,25 @@ mycursor = db.cursor()
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
 def setFullness(name, spacesTaken, fullPer, filename):
+    # sql execute statement inserting all values provided by parameters above
     sql = "INSERT INTO lotInfo (name, spacesTaken, fullPer, filename) VALUES (%s, %s, %s, %s)"
+    # values passed in above
     val = (name, spacesTaken, fullPer, filename)
+    # executing sql statement with parameters filling in placeholders
     mycursor.execute(sql, val)
 
+    # committing to the database
     db.commit()
 
-    print (mycursor.rowcount, "record inserted.")
+    # you can remove this if you want this is just something to make sure
+    # that the record was inserted if you want
+    #print (mycursor.rowcount, "record inserted.")
 
-    mycursor.execute("SELECT * FROM lotInfo")
-    for i in mycursor:
-        print(i)
+    # you can also remove this if you want
+    # this will show the table
+    #mycursor.execute("SELECT * FROM lotInfo")
+    #for i in mycursor:
+        #print(i)
 
 # this function will take a name of a lot and the percentage of the spaces full
 # from the vision system and will update the table
@@ -117,21 +125,25 @@ def getImageData(name):
 # this function will take the name of a parking lot and return the value of the
 # number of spaces that were taken in that lot.
 def getSpacesTaken(name):
+    # sql statement selecting spaces taken based on lot name
     sql = "SELECT spacesTaken FROM lotInfo WHERE name = %s"
+    # the lot name passed in above
     data = (name,)
+    # executing the statement with the parameter
     mycursor.execute(sql, data)
-
+    # fetchall will return a tuple as part of mysql library
+    # this will be stored in Ttaken
     Ttaken = mycursor.fetchall()
-
+    # indexing the tuple and extracting the value returning that value
     Ltaken = Ttaken[0][0]
-    return (Ltaken)
+    return Ltaken
 
 def main():
     # the functions that are manipulating the database are commented out for now
     # but can be uncommented for testing
     # I will change these once we begin integration (smooshing)
 
-    #setFullness(name, spacesTaken, fullPer, filename)
+    #setFullness("Lot4", 58, 0.6, "Lot4.png")
 
     #updateFullPer("Lot1", 0.5)
 
