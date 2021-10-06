@@ -7,7 +7,7 @@ Last Edit: 10/6/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import SelectMultiple from 'react-native-select-multiple';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
 
@@ -26,9 +26,6 @@ import {
 const lots = ['Lot A', 'Lot B (Nonfunctional)', 'Lot C (Nonfunctional)'];
 //dropdown code: https://github.com/tableflip/react-native-select-multiple#readme
 //requires react-native-select-multiple
-//another dropdown example: https://www.npmjs.com/package/react-native-multiple-select 
-//this one's a lil more complex but closer to what I was picturing
-
 
 /*display table
   https://www.positronx.io/react-native-table-component-tutorial-with-example/
@@ -37,13 +34,22 @@ const lots = ['Lot A', 'Lot B (Nonfunctional)', 'Lot C (Nonfunctional)'];
 const tableHead = ['Lot Name', 'Fullness'];
 const tableData = 
 [
-  ['Lot A', '50%'],
-  ['Lot B', '100%'],
-  ['Lot C', '69%'],       
+  [lots[0], '50%'],
+  [lots[1], '100%'],
+  [lots[2], '69%'],       
 ];
 
 export default class byLotScreen extends Component {
-  state = { selectedLots: [] }
+  constructor(props) {
+    super(props);
+    this.tableState = {
+      tableHead: tableHead,
+      tableData: tableData
+    }
+  }
+
+  
+  state = { selectedLots: [] } //used in dropdown
 
   //dropdown selection state
   onSelectionsChange = (selectedLots) => {
@@ -52,6 +58,8 @@ export default class byLotScreen extends Component {
 
   //render the page
   render() {
+
+    const tableState = this.tableState;
     return (
       <StyledContainer>
         {/*Error Button has been temporarily removed from this page bc it's
@@ -67,11 +75,12 @@ export default class byLotScreen extends Component {
  
         {/*Display Table */}
         {/* Currently using hard coded values as placeholders, these will be replaced with database values */}
-      
-        <Table borderStyle={{borderWidth: 1, borderColor: 'black'}}>
-          <Row data={tableHead}/>      
-          <Rows data={tableData}/>
-        </Table>      
+        <View>
+          <Table borderStyle={{borderWidth: 2, borderColor: 'black', flex:1}}>
+            <Row data={tableState.tableHead}/>      
+            <Rows data={tableState.tableData}/>
+          </Table>  
+        </View>    
       </StyledContainer>
     )
   }
