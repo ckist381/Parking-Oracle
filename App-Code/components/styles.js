@@ -3,10 +3,10 @@ Filename: styles.js
 Original Author: Lukas H.
 Date of Creation: 7/3/2021
 Description: Stylesheet for parking oracle mobile app
-Last Edit: 7/3/2021
+Last Edit: 7/7/2021
 -------------------------------------*/
 
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
 
@@ -26,15 +26,15 @@ const {primary, secondary, brand, gold, red, white} = Colors;
 
 export const StyledContainer = styled.View`
     flex: 1;
-    padding: 15px;
-    padding-top: ${StatusBarHeight - 10}px;
+    padding-left: 15px;
+    padding-right: 15px;    
     background-color: ${gold};    
 `;
 
 export const InnerContainer = styled.View`
     flex: 1;
     width: 100%;
-    background-color: ${white};
+    background-color: ${white};    
     align-items: center;
     justify-content: center;
 `;
@@ -88,7 +88,47 @@ export const StyledButton = styled.TouchableOpacity`
     height: 40px;    
 `;
 
+export const ErrorButton = styled.TouchableOpacity`
+    background-color: ${red};
+    padding: 20px;
+    borderRadius: 5px;
+    height: 40px;    
+    position: absolute;   
+    justify-content: center;     
+    top: 30px;
+    right: 10px;
+    margin: 10px; 
+`;
+
 export const ButtonText = styled.Text`
     color: ${white};    
     font-size: 14px;
+`;
+
+//dropdown styles will go here
+
+//Table Styles
+export const TableContainer = styled.View`
+    flex: 1;
+    padding: 18px;
+    paddingTop: 35px;
+    backgroundColor: ${white};
+    borderWidth: 1px;
+`;
+
+export const TableHeading = styled.View`
+    height: 50px;
+    alignContent: center;
+    backgroundColor: ${red};
+`;
+
+export const TableHeadingText = styled.Text`
+    margin: 10px;
+    color: '${white}';
+    textAlign: center;
+`;
+
+export const TableText = styled.Text`
+    margin: 10px;
+    textAlign: center;
 `;

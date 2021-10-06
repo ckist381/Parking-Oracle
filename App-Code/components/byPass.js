@@ -3,7 +3,7 @@ Filename: byPass.js
 Original Author: Lukas H.
 Date of Creation: 7/3/2021
 Description: Page that displays parking lot fullness by pass type
-Last Edit: 7/6/2021
+Last Edit: 7/7/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
@@ -15,7 +15,9 @@ import {
   StyledContainer,
   InnerContainer,
   PageTitle,
-  SubTitle
+  SubTitle,
+  ErrorButton,
+  ButtonText
 } from './styles';
 
 export default class byPassScreen extends Component {
@@ -23,6 +25,7 @@ export default class byPassScreen extends Component {
     return (
       <StyledContainer>          
           <InnerContainer>
+              <ErrorButton><ButtonText>Report an Error</ButtonText></ErrorButton>
               <PageTitle>Pick by Pass</PageTitle>
               <SubTitle>Select the pass(es) you want to see</SubTitle>
           </InnerContainer>

@@ -12,3 +12,10 @@ This is the official changelog for any changes starting 6/1/2021
 
 Note for future pulls: left off about to work on navigation - need to double check error when trying to import the navigation from react first
 
+10/5/2021 - Starting prototype v1
+- Added alert to home page to say display by pass is not currently functional (this wasn't required, I just did it for fun)
+- Removed report error button to display by lot page
+- began adding dropdown with multi select to display by lot page
+- began adding table to display by lot page (current incomplete as of this push)
+- updated some comments and documentation to be more legible
+

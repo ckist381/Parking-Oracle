@@ -1,25 +1,37 @@
 /*-----------------------------------
-Filename: Welcome.js
+Filename: Home.js
 Original Author: Lukas H.
 Date of Creation: 6/15/2021
 Description: Welcome/Landing page for the parking oracle mobile app 
-Last Edit: 7/6/2021
+Last Edit: 10/5/2021
 -------------------------------------*/
 
 // Homescreen.js
 import React, { Component } from 'react';
-import { Button, View, Text } from 'react-native';
-import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
+import { View, Alert } from 'react-native';
 
 //importing all the styles
 import {
-    StyledContainer, InnerContainer, BigPageLogo, PageTitle, SubTitle, LeftIcon, RightIcon, StyledButton, Colors, ButtonText
+    StyledContainer, InnerContainer, BigPageLogo, PageTitle, SubTitle, StyledButton, ErrorButton, Colors, ButtonText
 } from './styles';
 
 //colors
 const {} = Colors;
 
+//alert reference:
+//https://reactnative.dev/docs/alert
+//alert is not a requirement for prototype 1, i'm just adding it to make it look cooler
+const showAlert = () =>
+    Alert.alert(
+      "Stop!  This part isn't functional yet!",
+      "Prototype one only considers the lot selection, we have not yet completed selecting lots by their respective pass type.",
+      [        
+        { text: "OK", onPress: () => console.log("Alert OK Pressed") } //it just shows okay since we don't need a cancel button for this
+      ]
+    );
+
+
+//This renders the page
 export default class Homescreen extends Component {
   render() {
     return (
@@ -30,14 +42,19 @@ export default class Homescreen extends Component {
                 <PageTitle>Parking Oracle</PageTitle>
                 <SubTitle>Welcome to the app!</SubTitle>
 
-                {/*this just makes the buttons go next to each other*/}
+                {/*flex direction just makes the buttons go next to each other*/}
                 <View style={{flexDirection:'row'}}> 
                     <StyledButton onPress={() => this.props.navigation.navigate('byLot')}>
                         <ButtonText>Select By Lot</ButtonText>
                     </StyledButton>
+                    
+                    <StyledButton onPress={showAlert}><ButtonText>Select By Pass</ButtonText></StyledButton>
+                    {/*Currently Nonfunctional (prototype is focusing on by lot selection) */} 
+                    {/*
                     <StyledButton onPress={() => this.props.navigation.navigate('byPass')}>
-                        <ButtonText>Select By Pass</ButtonText>
-                    </StyledButton>                    
+                        <ButtonText>Select By Pass</ButtonText> 
+                    </StyledButton>
+                    */}                  
                 </View>   
             </InnerContainer>
       </StyledContainer>      
