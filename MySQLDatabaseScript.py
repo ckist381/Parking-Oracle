@@ -28,9 +28,9 @@ mycursor = db.cursor()
 # used to create lot table
 
 #mycursor.execute("CREATE TABLE lot (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1),\
- filename VARCHAR(255), url VARCHAR(255))")
+ #filename VARCHAR(255), url VARCHAR(255))")
 #mycursor.execute("INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES ('testLot', 11, 0, 'testLot.pn\
-g', 'atesturl.com')")
+#g', 'atesturl.com')")
 
 # this function will take the name of the lot, the spaces taken in the lot,
 # the fullness percentage of the lot, and the filename of that lot and will
@@ -145,15 +145,11 @@ def getNames():
 # executes the sql statement, fetches all returned items, indexes them puts them into a list and
 # returns the list
 def getURLs():
-    sql = "SELECT url FROM lot"
+    sql = "SELECT filename, url FROM lot"
     mycursor.execute(sql)
     Lurls = []
     Turls = mycursor.fetchall()
-    for i in range(len(Turls)):
-        urlTuple = Turls[i]
-        urlItem = urlTuple[0]
-        Lurls.append(urlItem)
-    print (Lurls)
+    print(Turls)
     return Lurls
     pass
 
