@@ -27,19 +27,16 @@ mycursor = db.cursor()
 # commented out for now
 # used to create lot table
 
-#mycursor.execute("CREATE TABLE lot (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1), filename VARCHAR(255), url VARCHAR(255))")
-#mycursor.execute("INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES ('testLot', 11, 0, 'testLot.png', 'atesturl.com')")
-
-# used if you want to be able to see lotInfo table
-mycursor.execute("SHOW TABLES")
-for i in mycursor:
-    print(i)
+#mycursor.execute("CREATE TABLE lot (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1),\
+ filename VARCHAR(255), url VARCHAR(255))")
+#mycursor.execute("INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES ('testLot', 11, 0, 'testLot.pn\
+g', 'atesturl.com')")
 
 # this function will take the name of the lot, the spaces taken in the lot,
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
 def setFullness(name, spacesTaken, fullPer, filename, url):
-    sql = "INSERT INTO lotInfo (name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s)"
+    sql = "INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s)"
     val = (name, spacesTaken, fullPer, filename, url)
     mycursor.execute(sql, val)
 
@@ -47,9 +44,9 @@ def setFullness(name, spacesTaken, fullPer, filename, url):
 
     print (mycursor.rowcount, "record inserted.")
 
-    mycursor.execute("SELECT * FROM lotInfo")
-    for i in mycursor:
-        print(i)
+    #mycursor.execute("SELECT * FROM lot")
+    #for i in mycursor:
+        #print(i)
 
 # this function will take a name of a lot and the percentage of the spaces full
 # from the vision system and will update the table
@@ -127,25 +124,75 @@ def getSpacesTaken(name):
     Ltaken = Ttaken[0][0]
     return (Ltaken)
 
+# this function will return a list of the names of parking lots inside the database inside a list
+# executes the sql statement, fetches all returned items, indexes them puts them into a list and
+# returns the list
+def getNames():
+    sql = "SELECT name FROM lot"
+    mycursor.execute(sql)
+    Lnames = []
+    Tnames = mycursor.fetchall()
+    for i in range(len(Tnames)):
+        nameTuple = Tnames[i]
+        nameItem = nameTuple[0]
+        Lnames.append(nameItem)
+    print(Lnames)
+    return Lnames
+
+    pass
+
+# this function will return a list of the urls of parking lots inside the database inside a list
+# executes the sql statement, fetches all returned items, indexes them puts them into a list and
+# returns the list
+def getURLs():
+    sql = "SELECT url FROM lot"
+    mycursor.execute(sql)
+    Lurls = []
+    Turls = mycursor.fetchall()
+    for i in range(len(Turls)):
+        urlTuple = Turls[i]
+        urlItem = urlTuple[0]
+        Lurls.append(urlItem)
+    print (Lurls)
+    return Lurls
+    pass
+
+# this is a function where you can manually delete entries from the database as
+# needed you have to manually update the sql script
+def deleteSomething():
+    sql="DELETE FROM lot WHERE name='testlot'"
+    mycursor.execute(sql)
+    for i in mycursor:
+        print(i)
+
+    pass
+
 def main():
     # the functions that are manipulating the database are commented out for now
     # but can be uncommented for testing
     # I will change these once we begin integration (smooshing)
 
+    #setFullness("testlot2", 12, 0.6, "testlot2.dat", "www.parkingoracle.com/testlot2")
 
-    #updateFullPer("Lot1", 0.5)
+    #updateFullPer("testlot2", 0.5)
 
-    #updateSpaces("Lot3", 39)
+    #updateSpaces("testlot", 39)
 
-    #updateFilename("Lot2", "Lot23.png")
+    #updateFilename("testlot2", "Lot23.png")
 
-    #imgDict = getImageData("testLot")
+    imgDict = getImageData("testLot")
+    print(imgDict)
 
-    #getSpacesTaken("testLot")
+    spacesTaken = getSpacesTaken("testlot")
+    print(spacesTaken)
 
-    mycursor.execute("SELECT * FROM lot WHERE name='testLot'")
-    for i in mycursor:
-        print(i)
+    names = getNames()
+    print (names)
+
+    urls = getURLs()
+    print (urls)
+
+    #deleteSomething()
 
 if __name__ == "__main__":
     main()
