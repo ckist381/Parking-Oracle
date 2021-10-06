@@ -25,44 +25,37 @@ db = mysql.connector.connect(
 mycursor = db.cursor()
 
 # commented out for now
-# used to create lotinfo table
+# used to create lot table
 
-#mycursor.execute("CREATE TABLE lotInfo (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1), filename VARCHAR(255))")
+#mycursor.execute("CREATE TABLE lot (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1), filename VARCHAR(255), url VARCHAR(255))")
+#mycursor.execute("INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES ('testLot', 11, 0, 'testLot.png', 'atesturl.com')")
 
 # used if you want to be able to see lotInfo table
-#mycursor.execute("SHOW TABLES")
-#for i in mycursor:
-    #print(i)
+mycursor.execute("SHOW TABLES")
+for i in mycursor:
+    print(i)
 
 # this function will take the name of the lot, the spaces taken in the lot,
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
-def setFullness(name, spacesTaken, fullPer, filename):
-    # sql execute statement inserting all values provided by parameters above
-    sql = "INSERT INTO lotInfo (name, spacesTaken, fullPer, filename) VALUES (%s, %s, %s, %s)"
-    # values passed in above
-    val = (name, spacesTaken, fullPer, filename)
-    # executing sql statement with parameters filling in placeholders
+def setFullness(name, spacesTaken, fullPer, filename, url):
+    sql = "INSERT INTO lotInfo (name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s)"
+    val = (name, spacesTaken, fullPer, filename, url)
     mycursor.execute(sql, val)
 
-    # committing to the database
     db.commit()
 
-    # you can remove this if you want this is just something to make sure
-    # that the record was inserted if you want
-    #print (mycursor.rowcount, "record inserted.")
+    print (mycursor.rowcount, "record inserted.")
 
-    # you can also remove this if you want
-    # this will show the table
-    #mycursor.execute("SELECT * FROM lotInfo")
-    #for i in mycursor:
-        #print(i)
+    mycursor.execute("SELECT * FROM lotInfo")
+    for i in mycursor:
+        print(i)
 
 # this function will take a name of a lot and the percentage of the spaces full
 # from the vision system and will update the table
 def updateFullPer (name, fullPer):
     # sql execute statement setting fullPercent based on name
-    sql = "UPDATE lotInfo SET fullPer=%s WHERE name=%s"
+    sql = "UPDATE lot SET fullPer=%s WHERE name=%s"
     # the parameters passed in above
     data = (fullPer, name)
 
@@ -75,7 +68,7 @@ def updateFullPer (name, fullPer):
 # vision system and will update the table
 def updateSpaces (name, spacesTaken):
     # sql execute statement setting spacesTaken based on a name
-    sql = "UPDATE lotInfo SET spacesTaken=%s WHERE name=%s"
+    sql = "UPDATE lot SET spacesTaken=%s WHERE name=%s"
     # the parameter passed in above
     data = (spacesTaken, name)
 
@@ -88,7 +81,7 @@ def updateSpaces (name, spacesTaken):
 # the vision system and will update the file name (if need be)
 def updateFilename(name, filename):
     # sql execute statement setting filename based on name
-    sql = "UPDATE lotInfo SET filename=%s WHERE name=%s"
+    sql = "UPDATE lot SET filename=%s WHERE name=%s"
     # the parameters passed in above
     data = (filename, name)
 
@@ -101,7 +94,7 @@ def updateFilename(name, filename):
 # with the name of the lot as the key and the filename as the value
 def getImageData(name):
     # sql execute statement setting filename based on name
-    sql = "SELECT name, filename FROM lotInfo WHERE name=%s"
+    sql = "SELECT name, filename FROM lot WHERE name=%s"
     # the parameter passed in above
     data = (name,)
 
@@ -125,25 +118,20 @@ def getImageData(name):
 # this function will take the name of a parking lot and return the value of the
 # number of spaces that were taken in that lot.
 def getSpacesTaken(name):
-    # sql statement selecting spaces taken based on lot name
-    sql = "SELECT spacesTaken FROM lotInfo WHERE name = %s"
-    # the lot name passed in above
+    sql = "SELECT spacesTaken FROM lot WHERE name = %s"
     data = (name,)
-    # executing the statement with the parameter
     mycursor.execute(sql, data)
-    # fetchall will return a tuple as part of mysql library
-    # this will be stored in Ttaken
+
     Ttaken = mycursor.fetchall()
-    # indexing the tuple and extracting the value returning that value
+
     Ltaken = Ttaken[0][0]
-    return Ltaken
+    return (Ltaken)
 
 def main():
     # the functions that are manipulating the database are commented out for now
     # but can be uncommented for testing
     # I will change these once we begin integration (smooshing)
 
-    #setFullness("Lot4", 58, 0.6, "Lot4.png")
 
     #updateFullPer("Lot1", 0.5)
 
@@ -151,13 +139,13 @@ def main():
 
     #updateFilename("Lot2", "Lot23.png")
 
-    imgDict = getImageData("Lot2")
+    #imgDict = getImageData("testLot")
 
-    getSpacesTaken("Lot3")
+    #getSpacesTaken("testLot")
 
-    #mycursor.execute("SELECT * FROM lotInfo")
-    #for i in mycursor:
-        #print(i)
+    mycursor.execute("SELECT * FROM lot WHERE name='testLot'")
+    for i in mycursor:
+        print(i)
 
 if __name__ == "__main__":
     main()
