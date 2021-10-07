@@ -1,6 +1,6 @@
 from imageai.Detection import ObjectDetection 
 import os
-from mySQLDatabaseScipt import *
+import MySQLDatabaseScript 
 
 
 
@@ -18,7 +18,9 @@ if __name__== "__main__":
 
 
     # Grabbing images from local directory 
-    file_names = 
+    names = MySQLDatabaseScript.getNames() 
+
+    
     
     # create detector 
     detector = ObjectDetection()
@@ -32,18 +34,20 @@ if __name__== "__main__":
     detector.loadModel()
 
     # for each file in file_names, do detection, spit output image to local directory
-    for file in file_names: 
+    for file in names: 
         total = 0
-        update = file.split(".")[1] + "_detected.PNG"
+        file_name = MySQLDatabaseScript.getImageData(file)
+        print(file_name)
+        update = file_name + "_detected.PNG"
         detections = detector.detectObjectsFromImage(
-            input_image = os.path.join(current_directory, file), 
+            input_image = os.path.join(current_directory, file_name), 
             output_image_path = os.path.join(current_directory , update))
 
         for object in detections: 
             if (object["name"] == 'car'): 
                 total += 1
-        
-        # total/#_of_spaces 
+        spaces = MySQLDatabaseScript.getSpacesTaken(file)
+        MySQLDatabaseScript.updateFullPer(file, (total/spaces))
 
     
 

@@ -91,7 +91,7 @@ def updateFilename(name, filename):
 # with the name of the lot as the key and the filename as the value
 def getImageData(name):
     # sql execute statement setting filename based on name
-    sql = "SELECT name, filename FROM lot WHERE name=%s"
+    sql = "SELECT filename FROM lot WHERE name=%s"
     # the parameter passed in above
     data = (name,)
 
@@ -100,17 +100,9 @@ def getImageData(name):
     # printing as a test measure (can be removed)
     mycursor.execute(sql, data)
     fileData = mycursor.fetchall()
-    print (fileData)
 
-    # indexing fileData to retrieve the tuple and extract the values
-    # of the name of the lot Lname and the file location Lfile
-    Lname = fileData[0][0]
-    Lfile = fileData[0][1]
+    return fileData[0][0]
 
-    # combining these two values into a dictionary
-    # returning the dictionary
-    imgDict = {Lname: Lfile}
-    return imgDict
 
 # this function will take the name of a parking lot and return the value of the
 # number of spaces that were taken in that lot.
@@ -191,4 +183,9 @@ def main():
     #deleteSomething()
 
 if __name__ == "__main__":
-    main()
+    sql = "SELECT name, fullPer, spacesTaken from lot"
+    mycursor.execute(sql)
+    Lurls = []
+    Turls = mycursor.fetchall()
+    print(Turls)
+    
