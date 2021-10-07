@@ -3,17 +3,6 @@ import os
 import MySQLDatabaseScript 
 
 
-
-def findImages(l):
-
-    d =[] 
-    for item in l: 
-        if 'PNG' in item: 
-            d.append(item)
-    
-    return d
-
-
 if __name__== "__main__": 
 
 
@@ -60,4 +49,3 @@ if __name__== "__main__":
     print("--------------------------------")
     
     
-
