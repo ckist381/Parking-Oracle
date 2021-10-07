@@ -150,7 +150,7 @@ def getURLs():
     Lurls = []
     Turls = mycursor.fetchall()
     print(Turls)
-    return Lurls
+    return Turls
     pass
 
 # this is a function where you can manually delete entries from the database as

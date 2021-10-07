@@ -56,10 +56,11 @@ def getScreenshot(url, num, filename):
 
 #for future: change to read from file?  
 URLs = MySQLDatabaseScript.getURLs() 
+print(URLs)
 
 #LOOP THROUGH PROVIDED URLS -------------------------
 num = 1
-for url in URLs:    
+for url in URLs:  
     getScreenshot(url[1],num, url[0])
     print("Screenshot #" + str(num) + " has been taken!")
     num = num+1
