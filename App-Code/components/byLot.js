@@ -6,10 +6,26 @@ Description: Page that displays parking lot fullness by lot
 Last Edit: 10/6/2021
 -------------------------------------*/
 
+import { useLinkBuilder } from '@react-navigation/native';
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, FlatList } from 'react-native';
 import SelectMultiple from 'react-native-select-multiple';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
+import { getActiveChildNavigationOptions } from 'react-navigation';
+import  Header from '../components/Header';
+
+
+const connect = require("../node-mysql/connection"); 
+
+
+
+
+
+
+
+
+
+
 
 import {
   StyledContainer,
@@ -32,12 +48,7 @@ const lots = ['Lot A', 'Lot B (Nonfunctional)', 'Lot C (Nonfunctional)'];
   https://www.npmjs.com/package/react-native-table-component
   */
 const tableHead = ['Lot Name', 'Fullness'];
-const tableData = 
-[
-  [lots[0], '50%'],
-  [lots[1], '100%'],
-  [lots[2], '69%'],       
-];
+const tableData = []
 
 export default class byLotScreen extends Component {
   constructor(props) {
@@ -67,19 +78,20 @@ export default class byLotScreen extends Component {
         <PageTitle>Pick by Lot</PageTitle>
         <SubTitle>Select the lot(s) you want to see</SubTitle>
 
-        <SelectMultiple
+        { /* <SelectMultiple
           items={lots}
           selectedItems={this.state.selectedLots}
           onSelectionsChange={this.onSelectionsChange} 
-        />
+        /> */ } 
  
         {/*Display Table */}
         {/* Currently using hard coded values as placeholders, these will be replaced with database values */}
         <View>
-          <Table borderStyle={{borderWidth: 2, borderColor: 'black', flex:1}}>
-            <Row data={tableState.tableHead}/>      
-            <Rows data={tableState.tableData}/>
-          </Table>  
+           <Header /> 
+           <FlatList data={tableData} renderItem={({item}) => (
+             <Text>{item.name} {item.fullness}</Text>
+           )}> </FlatList>
+          
         </View>    
       </StyledContainer>
     )
