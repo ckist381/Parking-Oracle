@@ -3,85 +3,66 @@ Filename: byLot.js
 Original Author: Lukas H.
 Date of Creation: 7/6/2021
 Description: Page that displays parking lot fullness by lot
-Last Edit: 10/6/2021
+Last Edit: 10/18/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
-import SelectMultiple from 'react-native-select-multiple';
-import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
+import { View, Picker, Text } from 'react-native';
 
 import {
   StyledContainer,
-  InnerContainer,
   PageTitle,
   SubTitle,
-  TableHeading,
-  TableHeadingText, 
-  TableText
+  dropDownContainer
 } from './styles';
 
-//this'll be change to the data from the database, it's hard coded atm
 
-const lots = ['Lot A', 'Lot B (Nonfunctional)', 'Lot C (Nonfunctional)'];
-//dropdown code: https://github.com/tableflip/react-native-select-multiple#readme
-//requires react-native-select-multiple
-
-/*display table
-  https://www.positronx.io/react-native-table-component-tutorial-with-example/
-  https://www.npmjs.com/package/react-native-table-component
-  */
-const tableHead = ['Lot Name', 'Fullness'];
-const tableData = 
-[
-  [lots[0], '50%'],
-  [lots[1], '100%'],
-  [lots[2], '69%'],       
-];
+//will be replaced with database query
+const LotNames = ['Lot A', 'Lot B', 'Lot C'];
+const LotData = ['50%', '100%', '69%'];
+const ViewResult = false;
 
 export default class byLotScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.tableState = {
-      tableHead: tableHead,
-      tableData: tableData
-    }
+
+  state = {Lot: ''};  
+
+  //sets the lot selected to what gets displayed on dropdown
+  showLotData =(option)=>{
+    if(option !== 'disabled')
+    {
+      this.setState({Lot: option});      
+    }    
   }
-
-  
-  state = { selectedLots: [] } //used in dropdown
-
-  //dropdown selection state
-  onSelectionsChange = (selectedLots) => {
-    this.setState({ selectedLots })
-  }
-
   //render the page
   render() {
 
-    const tableState = this.tableState;
-    return (
-      <StyledContainer>
-        {/*Error Button has been temporarily removed from this page bc it's
-            not needed for current prototype. */}      
-        <PageTitle>Pick by Lot</PageTitle>
-        <SubTitle>Select the lot(s) you want to see</SubTitle>
+    return (  
+      <StyledContainer> 
+        {/*header*/}        
+        <View style={{alignItems:'center'}}>           
+                <PageTitle>Pick by Lot</PageTitle>
+                <SubTitle>Select the lot you want to see</SubTitle>
+        </View>
 
-        <SelectMultiple
-          items={lots}
-          selectedItems={this.state.selectedLots}
-          onSelectionsChange={this.onSelectionsChange} 
-        />
- 
-        {/*Display Table */}
-        {/* Currently using hard coded values as placeholders, these will be replaced with database values */}
-        <View>
-          <Table borderStyle={{borderWidth: 2, borderColor: 'black', flex:1}}>
-            <Row data={tableState.tableHead}/>      
-            <Rows data={tableState.tableData}/>
-          </Table>  
-        </View>    
-      </StyledContainer>
+        {/*dropdown menu (using array listed above)*/}
+          <Picker
+              style={{dropDownContainer}}
+              mode="dropdown"
+              selectedValue={this.state.Lot}
+              onValueChange={this.showLotData}> 
+              {LotNames.map((item, index) => {
+                  return (<Picker.Item label={item} value={item} key={index}/>) 
+              })}
+          </Picker>    
+          
+          {/*display based off what was selected
+            //https://www.tabnine.com/code/javascript/classes/react-native/Picker
+            //https://stackoverflow.com/questions/44256969/react-native-display-view-depending-on-conditional
+          */}
+          
+          { this.state.Lot == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.Lot} is selected.</Text></View> }
+        
+      </StyledContainer>   
     )
   }
 }

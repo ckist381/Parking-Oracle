@@ -3,13 +3,11 @@ Filename: styles.js
 Original Author: Lukas H.
 Date of Creation: 7/3/2021
 Description: Stylesheet for parking oracle mobile app
-Last Edit: 10/6/2021
+Last Edit: 10/18/2021
 -------------------------------------*/
 
 import styled from 'styled-components/native';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
-import { Table, Row, Rows } from 'react-native-table-component';
 
 const StatusBarHeight = Constants.statusBarHeight;
 
@@ -26,19 +24,12 @@ export const Colors = {
 const {primary, secondary, brand, gold, red, white} = Colors;
 
 export const StyledContainer = styled.View`
-    flex: 1;
-    padding-left: 15px;
-    padding-right: 15px;    
-    background-color: ${gold};
-    align-items: center;
-    justify-content: center;  
-`;
-
-export const InnerContainer = styled.View`
-    flex: 1;
-    width: 100%;
-    background-color: ${white};    
-    align-items: center;
+    flex: 1;       
+    background-color: ${white};
+    borderWidth: 15px; 
+    borderColor: ${gold};
+    borderTopWidth: 0px;
+    borderBottomWidth: 0px;
     justify-content: center;
 `;
 
@@ -121,4 +112,9 @@ export const TableHeadingText = styled.Text`
 
 export const TableText = styled.Text`
     textAlign: center;
+`;
+
+export const dropDownContainer = styled.Picker`    
+    position: absolute;
+    margin: 50px;
 `;
