@@ -49,13 +49,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="154" y="116" width="1200" height="800" key="AVDManager" timestamp="1625600890600">
+    <state x="-23" y="86" width="1200" height="763" key="AVDManager" timestamp="1633485983336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="154" y="116" width="1200" height="800" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625600890600" />
-    <state x="410" y="240" key="run.anything.popup" timestamp="1625320537920">
+    <state x="-23" y="86" width="1200" height="763" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633485983336" />
+    <state x="252" y="277" key="FileChooserDialogImpl" timestamp="1633447400516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="410" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625320537920" />
+    <state x="252" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633447400516" />
+    <state x="877" y="321" key="run.anything.popup" timestamp="1633481504049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="877" y="321" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633481504049" />
   </component>
 </project>
