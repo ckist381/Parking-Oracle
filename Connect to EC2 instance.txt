@@ -1,0 +1,18 @@
+Connect to instance
+--------------------------------------------------
+Instance ID
+i-058c2e244e4490edd (parking-oracle-ec2)
+
+1. Open an SSH client.
+2. Locate your private key file. The key used to launch this instance is parking-oracle-ec2.pem
+3. Run this command, if necessary, to ensure your key is not publicly viewable.
+
+ chmod 400 parking-oracle-ec2.pem
+
+4. Connect to your instance using its Public DNS:
+
+     ec2-18-220-53-238.us-east-2.compute.amazonaws.com
+
+Example:
+
+ ssh -i "parking-oracle-ec2.pem" ec2-user@ec2-18-220-53-238.us-east-2.compute.amazonaws.com
