@@ -28,27 +28,36 @@ super();
   this.state = {
 
     //array of objects containing values
-    LotData : [
-      {
-        "name" : "Lot A",
-        "fullness" : 50,
-      },
-      {
-        "name" : "Lot B",
-        "fullness" : 100,
-      },
-      {
-        "name" : "Lot C",
-        "fullness" : 69,
-      },
-    ],
+    LotData : [] ,
     selectedLotName: '',
     selectedLotFullness: 0,
   }
 }
 
 
+async componentDidMount() { 
+
+
+  query = await fetch("http://10.0.0.207:5000/get"); 
+
+  json = await query.json(); 
+
+  json = json.lots; 
+
+  this.setState({ 
+
+    LotData: json
+  })
+}
+
+
+ 
+
   render() {
+
+    console.log(this.state.LotData);
+
+    
     return (  
       <StyledContainer> 
         {/*header*/}        
@@ -62,7 +71,7 @@ super();
         {/*maps array values for LotNames to picker items*/}
         { <Picker 
             selectedValue={this.state.selectedLotName}
-            onValueChange={(itemValue, itemIndex) => this.setState({selectedLotName:itemValue.name, selectedLotFullness:itemValue.fullness})}
+            onValueChange={(itemValue, itemIndex) => this.setState({selectedLotName:itemValue.name, selectedLotFullness:itemValue.fullPer})}
           >
 
           {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
@@ -80,7 +89,7 @@ super();
             also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
         */}
         
-      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness}% full.</Text></View>}
+      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}
           
       </StyledContainer>   
     )
