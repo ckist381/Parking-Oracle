@@ -20,9 +20,7 @@ import {
 export default class byLotScreen extends Component {
 
 
-//sketchy af website but I yoinked the code from here:
-//https://xuykyuu.blogspot.com/2018/07/map-object-to-generate-pickeritem.html
-//much more credible stack overflow reference:
+//snazzy stack overflow reference
 //https://stackoverflow.com/questions/40201699/objects-in-react-native
 
 constructor() {
