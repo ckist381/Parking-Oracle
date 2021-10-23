@@ -48,9 +48,9 @@ def showDatabase():
 # this function will take the name of the lot, the spaces taken in the lot,
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
-def setFullness(name, spacesTaken, fullPer, filename, url):
-    sql = "INSERT INTO lot (name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s)"
-    val = (name, spacesTaken, fullPer, filename, url)
+def setFullness(lotID, name, spacesTaken, fullPer, filename, url):
+    sql = "INSERT INTO lot (lotID, name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s, %s)"
+    val = (lotID, name, spacesTaken, fullPer, filename, url)
     mycursor.execute(sql, val)
 
     db.commit()
@@ -177,7 +177,7 @@ def main():
 
     showDatabase()
 
-    #setFullness("testlot2", 12, 0.6, "testlot2.dat", "www.parkingoracle.com/testlot2")
+    #setFullness(2, "testlot2", 12, 0.6, "testlot2.dat", "www.parkingoracle.com/testlot2")
 
     #updateFullPer("testlot2", 0.5)
 
