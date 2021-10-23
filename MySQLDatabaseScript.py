@@ -1,6 +1,6 @@
 # Author:                    Michael Moser
 # Major:                     Computer Science: Information Technology
-# Creation Date:             09Aug2021 (revision 1 completion date)
+# Creation Date:             23Oct2021
 # Course:                    CSC354/355 - 020
 # Professor Name:            Professor DeMarco
 # Filename:                  MySQLDatabaseScript.py
@@ -24,8 +24,21 @@ db = mysql.connector.connect(
 # used to be able to execute statements using mysql library
 mycursor = db.cursor()
 
-# commented out for now
-# used to create lot table
+# this is a function that will insert new columns into the database
+# you will need to manually work with this statement
+def alterDatabase():
+    sql = "ALTER TABLE lot ADD lotID INTEGER FIRST;"
+    mycursor.execute(sql)
+    db.commit()
+    print (mycursor.rowcount, "inserted new column.")
+
+# this is a function that when called will display the database and all
+# elements when needed
+def showDatabase():
+    sql = "SELECT * FROM lot"
+    mycursor.execute(sql)
+    records = mycursor.fetchall()
+    print(records)
 
 #mycursor.execute("CREATE TABLE lot (name VARCHAR(255) PRIMARY KEY NOT NULL, spacesTaken INT(5), fullPer FLOAT(5,1),\
  #filename VARCHAR(255), url VARCHAR(255))")
@@ -159,6 +172,10 @@ def main():
     # the functions that are manipulating the database are commented out for now
     # but can be uncommented for testing
     # I will change these once we begin integration (smooshing)
+    
+    #alterDatabase()
+
+    showDatabase()
 
     #setFullness("testlot2", 12, 0.6, "testlot2.dat", "www.parkingoracle.com/testlot2")
 
