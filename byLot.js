@@ -3,97 +3,95 @@ Filename: byLot.js
 Original Author: Lukas H.
 Date of Creation: 7/6/2021
 Description: Page that displays parking lot fullness by lot
-Last Edit: 10/6/2021
+Last Edit: 10/23/2021
 -------------------------------------*/
 
-import { useLinkBuilder } from '@react-navigation/native';
 import React, { Component } from 'react';
-import { Text, StyleSheet, View, FlatList } from 'react-native';
-import SelectMultiple from 'react-native-select-multiple';
-import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
-import { getActiveChildNavigationOptions } from 'react-navigation';
-import  Header from '../components/Header';
-
-
-const connect = require("../node-mysql/connection"); 
-
-
-
-
-
-
-
-
-
-
+import { View, Text } from 'react-native';
+import Picker from 'react-native-universal-picker';
 
 import {
   StyledContainer,
-  InnerContainer,
   PageTitle,
   SubTitle,
-  TableHeading,
-  TableHeadingText, 
-  TableText
+  dropDownContainer
 } from './styles';
 
-//this'll be change to the data from the database, it's hard coded atm
-
-const lots = ['Lot A', 'Lot B (Nonfunctional)', 'Lot C (Nonfunctional)'];
-//dropdown code: https://github.com/tableflip/react-native-select-multiple#readme
-//requires react-native-select-multiple
-
-/*display table
-  https://www.positronx.io/react-native-table-component-tutorial-with-example/
-  https://www.npmjs.com/package/react-native-table-component
-  */
-const tableHead = ['Lot Name', 'Fullness'];
-const tableData = []
-
 export default class byLotScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.tableState = {
-      tableHead: tableHead,
-      tableData: tableData
-    }
+
+
+//snazzy stack overflow reference
+//https://stackoverflow.com/questions/40201699/objects-in-react-native
+
+constructor() {
+super();
+  this.state = {
+
+    //array of objects containing values
+    LotData : [] ,
+    selectedLotName: '',
+    selectedLotFullness: 0,
   }
+}
 
-  
-  state = { selectedLots: [] } //used in dropdown
 
-  //dropdown selection state
-  onSelectionsChange = (selectedLots) => {
-    this.setState({ selectedLots })
-  }
+async componentDidMount() { 
 
-  //render the page
+
+  query = await fetch("http://10.0.0.207:5000/get"); 
+
+  json = await query.json(); 
+
+  json = json.lots; 
+
+  this.setState({ 
+
+    LotData: json
+  })
+}
+
+
+ 
+
   render() {
 
-    const tableState = this.tableState;
-    return (
-      <StyledContainer>
-        {/*Error Button has been temporarily removed from this page bc it's
-            not needed for current prototype. */}      
-        <PageTitle>Pick by Lot</PageTitle>
-        <SubTitle>Select the lot(s) you want to see</SubTitle>
+    console.log(this.state.LotData);
 
-        { /* <SelectMultiple
-          items={lots}
-          selectedItems={this.state.selectedLots}
-          onSelectionsChange={this.onSelectionsChange} 
-        /> */ } 
- 
-        {/*Display Table */}
-        {/* Currently using hard coded values as placeholders, these will be replaced with database values */}
-        <View>
-           <Header /> 
-           <FlatList data={tableData} renderItem={({item}) => (
-             <Text>{item.name} {item.fullness}</Text>
-           )}> </FlatList>
+    
+    return (  
+      <StyledContainer> 
+        {/*header*/}        
+        <View style={{alignItems:'center'}}>           
+                <PageTitle>Pick by Lot</PageTitle>
+                <SubTitle>Select the lot you want to see</SubTitle>
+        </View>
+
+        {/*dropdown menu (using array listed above)*/}
+        <View style={{dropDownContainer}}>
+        {/*maps array values for LotNames to picker items*/}
+        { <Picker 
+            selectedValue={this.state.selectedLotName}
+            onValueChange={(itemValue, itemIndex) => this.setState({selectedLotName:itemValue.name, selectedLotFullness:itemValue.fullPer})}
+          >
+
+          {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
+          {this.state.LotData.map(item => {
+            return(<Picker.Item label={item.name} value={item} key={item.name}/>)
+          })
+          }        
+          </Picker>
+        }
+        </View>
+
+        {/*display based off what was selected            
+          Conditional code: https://stackoverflow.com/questions/44256969/react-native-display-view-depending-on-conditional
+            if something not selected, display nothing.  if something is selected, list the lot and the associated fullness
+            also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
+        */}
+        
+      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}
           
-        </View>    
-      </StyledContainer>
+      </StyledContainer>   
     )
   }
 }
