@@ -6,7 +6,7 @@ Description: Page that displays parking lot fullness by lot
 Last Edit: 10/23/2021
 -------------------------------------*/
 
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Picker from 'react-native-universal-picker';
 
@@ -18,7 +18,9 @@ import {
 } from './styles';
 
 export default class byLotScreen extends Component {
-//much more credible stack overflow reference:
+
+
+//snazzy stack overflow reference
 //https://stackoverflow.com/questions/40201699/objects-in-react-native
 
 constructor() {
@@ -26,27 +28,36 @@ super();
   this.state = {
 
     //array of objects containing values
-    LotData : [
-      {
-        "name" : "Lot A",
-        "fullness" : 50,
-      },
-      {
-        "name" : "Lot B",
-        "fullness" : 100,
-      },
-      {
-        "name" : "Lot C",
-        "fullness" : 69,
-      },
-    ],
-    selectedLotData: '',
+    LotData : [] ,
     selectedLotName: '',
     selectedLotFullness: 0,
   }
 }
 
+
+async componentDidMount() { 
+
+
+  query = await fetch("http://10.0.0.207:5000/get"); 
+
+  json = await query.json(); 
+
+  json = json.lots; 
+
+  this.setState({ 
+
+    LotData: json
+  })
+}
+
+
+ 
+
   render() {
+
+    console.log(this.state.LotData);
+
+    
     return (  
       <StyledContainer> 
         {/*header*/}        
@@ -59,14 +70,11 @@ super();
         <View style={{dropDownContainer}}>
         {/*maps array values for LotNames to picker items*/}
         { <Picker 
-            selectedValue={this.state.selectedLotData}
-            onValueChange={(itemValue) => this.setState({selectedLotData:itemValue, selectedLotName:itemValue.name, selectedLotFullness:itemValue.fullness})   
-                     
-            }
+            selectedValue={this.state.selectedLotName}
+            onValueChange={(itemValue, itemIndex) => this.setState({selectedLotName:itemValue.name, selectedLotFullness:itemValue.fullPer})}
           >
 
           {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
-          <Picker.Item label="Please Select a Lot" color="#aaa"/>
           {this.state.LotData.map(item => {
             return(<Picker.Item label={item.name} value={item} key={item.name}/>)
           })
@@ -81,7 +89,7 @@ super();
             also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
         */}
         
-      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness}% full.</Text></View>}
+      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}
           
       </StyledContainer>   
     )
