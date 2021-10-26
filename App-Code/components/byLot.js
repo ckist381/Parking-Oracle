@@ -75,6 +75,7 @@ async componentDidMount() {
           >
 
           {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
+          <Picker.Item label="Please Select a Lot" color="#aaa"/>
           {this.state.LotData.map(item => {
             return(<Picker.Item label={item.name} value={item} key={item.name}/>)
           })
