@@ -38,7 +38,7 @@ super();
 async componentDidMount() { 
 
 
-  query = await fetch("http://10.0.0.207:5000/get"); 
+  query = await fetch("http://18.220.53.238:5000/get"); 
 
   json = await query.json(); 
 
