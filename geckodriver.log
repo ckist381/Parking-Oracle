@@ -1,0 +1,670 @@
+1635810600801	geckodriver	INFO	Listening on 127.0.0.1:49479
+1635810603829	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileFsvqut"
+1635810604218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileFsvqut\\search.json.mozlz4", (void 0)))
+1635810606072	Marionette	INFO	Listening on port 49487
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635810606502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635810607863	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6160, MediaDecoderStateMachine #1] WARNING: 13f1b5cf740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635810610032	Marionette	INFO	Stopped listening on port 49487
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1635810610589	geckodriver	INFO	Listening on 127.0.0.1:49568
+1635810613619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile94D7eQ"
+1635810614016	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile94D7eQ\\search.json.mozlz4", (void 0)))
+1635810616278	Marionette	INFO	Listening on port 49576
+1635810616309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635810617622	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 20112, MediaDecoderStateMachine #1] WARNING: 24eeb190820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635810619599	Marionette	INFO	Stopped listening on port 49576
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1635810620164	geckodriver	INFO	Listening on 127.0.0.1:49643
+1635810623197	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileRqknG0"
+1635810623593	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileRqknG0\\search.json.mozlz4", (void 0)))
+1635810625774	Marionette	INFO	Listening on port 49651
+1635810625862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635810627112	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 18140, MediaDecoderStateMachine #1] WARNING: 24e4be96120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635810629307	Marionette	INFO	Stopped listening on port 49651
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635810629861	geckodriver	INFO	Listening on 127.0.0.1:49727
+1635810632881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileNorfm5"
+1635810633295	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileNorfm5\\search.json.mozlz4", (void 0)))
+1635810635587	Marionette	INFO	Listening on port 49735
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635810636075	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635810637347	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7192, MediaDecoderStateMachine #1] WARNING: 1779d4b8ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635810639616	Marionette	INFO	Stopped listening on port 49735
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1635810640155	geckodriver	INFO	Listening on 127.0.0.1:49813
+1635810643193	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileiTYmm6"
+1635810643587	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileiTYmm6\\search.json.mozlz4", (void 0)))
+1635810645826	Marionette	INFO	Listening on port 49824
+1635810645858	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635810647146	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 10176, MediaDecoderStateMachine #1] WARNING: 29b2ebf33c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635810649223	Marionette	INFO	Stopped listening on port 49824
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635811603495	geckodriver	INFO	Listening on 127.0.0.1:54934
+1635811606535	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilepKeShS"
+1635811606929	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilepKeShS\\search.json.mozlz4", (void 0)))
+1635811609148	Marionette	INFO	Listening on port 54942
+1635811609195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635811610279	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 3980, MediaDecoderStateMachine #1] WARNING: 1ba80b5bf20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635811613655	Marionette	INFO	Stopped listening on port 54942
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635811626584	geckodriver	INFO	Listening on 127.0.0.1:55026
+1635811629609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilefaQ5SJ"
+1635811630002	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilefaQ5SJ\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635811632211	Marionette	INFO	Listening on port 55034
+1635811632278	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635811633546	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 17852, MediaDecoderStateMachine #1] WARNING: 1353cea4c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635811636660	Marionette	INFO	Stopped listening on port 55034
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812102742	geckodriver	INFO	Listening on 127.0.0.1:65120
+1635812105784	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilei8oYAT"
+1635812106178	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilei8oYAT\\search.json.mozlz4", (void 0)))
+1635812108365	Marionette	INFO	Listening on port 65129
+1635812108445	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812109429	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6556, MediaDecoderStateMachine #1] WARNING: 2bb4525fc80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812112847	Marionette	INFO	Stopped listening on port 65129
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812169885	geckodriver	INFO	Listening on 127.0.0.1:65201
+1635812172917	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileLUYytl"
+1635812173310	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileLUYytl\\search.json.mozlz4", (void 0)))
+1635812175564	Marionette	INFO	Listening on port 65210
+1635812175595	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812176899	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 5848, MediaDecoderStateMachine #1] WARNING: 1d58f350d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812180006	Marionette	INFO	Stopped listening on port 65210
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1635812180561	geckodriver	INFO	Listening on 127.0.0.1:65277
+1635812183588	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilesmuuZB"
+1635812183981	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilesmuuZB\\search.json.mozlz4", (void 0)))
+1635812186196	Marionette	INFO	Listening on port 65286
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812186252	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812187506	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 17436, MediaDecoderStateMachine #1] WARNING: 20966a04d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812190380	Marionette	INFO	Stopped listening on port 65286
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812190933	geckodriver	INFO	Listening on 127.0.0.1:65348
+1635812193960	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilejDN8LV"
+1635812194356	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilejDN8LV\\search.json.mozlz4", (void 0)))
+1635812196567	Marionette	INFO	Listening on port 65356
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812196615	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812197592	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 19256, MediaDecoderStateMachine #1] WARNING: 22fecc4f120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812200915	Marionette	INFO	Stopped listening on port 65356
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812201466	geckodriver	INFO	Listening on 127.0.0.1:65424
+1635812204505	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilexNwDIJ"
+1635812204898	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilexNwDIJ\\search.json.mozlz4", (void 0)))
+1635812207135	Marionette	INFO	Listening on port 65432
+1635812207174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812208438	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 14776, MediaDecoderStateMachine #1] WARNING: 210f6fc4900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812211502	Marionette	INFO	Stopped listening on port 65432
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812212276	geckodriver	INFO	Listening on 127.0.0.1:65497
+1635812215307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileizHS8c"
+1635812215702	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileizHS8c\\search.json.mozlz4", (void 0)))
+1635812217871	Marionette	INFO	Listening on port 65505
+1635812217997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812218967	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 9736, MediaDecoderStateMachine #1] WARNING: 1d6e6507d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812222402	Marionette	INFO	Stopped listening on port 65505
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812465892	geckodriver	INFO	Listening on 127.0.0.1:52595
+1635812468913	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilegHMNbh"
+1635812469319	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilegHMNbh\\search.json.mozlz4", (void 0)))
+1635812471552	Marionette	INFO	Listening on port 52605
+1635812471595	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812472623	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 15028, MediaDecoderStateMachine #1] WARNING: 1c756352f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812476041	Marionette	INFO	Stopped listening on port 52605
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812575867	geckodriver	INFO	Listening on 127.0.0.1:52679
+1635812578907	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileMkZtLp"
+1635812579307	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileMkZtLp\\search.json.mozlz4", (void 0)))
+1635812581462	Marionette	INFO	Listening on port 52687
+1635812581565	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812582900	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 16196, MediaDecoderStateMachine #1] WARNING: 1d486160ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812590207	Marionette	INFO	Stopped listening on port 52687
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635812616714	geckodriver	INFO	Listening on 127.0.0.1:52778
+1635812619755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileJDRkbf"
+1635812620152	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileJDRkbf\\search.json.mozlz4", (void 0)))
+1635812622304	Marionette	INFO	Listening on port 52786
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812622419	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812623731	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 9088, MediaDecoderStateMachine #1] WARNING: 1cac7bfe2e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812627190	Marionette	INFO	Stopped listening on port 52786
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812629843	geckodriver	INFO	Listening on 127.0.0.1:52853
+1635812632893	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile6VwY2o"
+1635812633287	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile6VwY2o\\search.json.mozlz4", (void 0)))
+1635812635529	Marionette	INFO	Listening on port 52861
+1635812635561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812636818	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 9540, MediaDecoderStateMachine #1] WARNING: 26728c4ec80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812639866	Marionette	INFO	Stopped listening on port 52861
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812663296	geckodriver	INFO	Listening on 127.0.0.1:52937
+1635812666329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileYeSlYL"
+1635812666723	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileYeSlYL\\search.json.mozlz4", (void 0)))
+1635812668903	Marionette	INFO	Listening on port 52946
+1635812669010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812670156	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 12512, MediaDecoderStateMachine #1] WARNING: 1f6cc04be40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812678250	Marionette	INFO	Stopped listening on port 52946
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635812754794	geckodriver	INFO	Listening on 127.0.0.1:53190
+1635812757834	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilehQdrsJ"
+1635812758226	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilehQdrsJ\\search.json.mozlz4", (void 0)))
+1635812760462	Marionette	INFO	Listening on port 53198
+1635812760514	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812761521	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 4060, MediaDecoderStateMachine #1] WARNING: 1d02aa75d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812767484	Marionette	INFO	Stopped listening on port 53198
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812902951	geckodriver	INFO	Listening on 127.0.0.1:49246
+1635812905983	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileN2eNF4"
+1635812906378	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileN2eNF4\\search.json.mozlz4", (void 0)))
+1635812908649	Marionette	INFO	Listening on port 49254
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812909146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812910479	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 8928, MediaDecoderStateMachine #1] WARNING: 15161c25d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812918845	Marionette	INFO	Stopped listening on port 49254
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635812951788	geckodriver	INFO	Listening on 127.0.0.1:49335
+1635812954826	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileE9FTdR"
+1635812955214	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileE9FTdR\\search.json.mozlz4", (void 0)))
+1635812957445	Marionette	INFO	Listening on port 49343
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635812957494	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635812958749	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 13268, MediaDecoderStateMachine #1] WARNING: 1498e77b120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635812983080	Marionette	INFO	Stopped listening on port 49343
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813004655	geckodriver	INFO	Listening on 127.0.0.1:49419
+1635813007684	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileRINCvc"
+1635813008074	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileRINCvc\\search.json.mozlz4", (void 0)))
+1635813010246	Marionette	INFO	Listening on port 49428
+1635813010358	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813011817	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 17296, MediaDecoderStateMachine #1] WARNING: 1dde2419e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813017209	Marionette	INFO	Stopped listening on port 49428
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813219526	geckodriver	INFO	Listening on 127.0.0.1:59219
+1635813222561	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileG5KfvR"
+1635813222957	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileG5KfvR\\search.json.mozlz4", (void 0)))
+1635813225193	Marionette	INFO	Listening on port 59230
+1635813225237	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813226414	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 10660, MediaDecoderStateMachine #1] WARNING: 1c940494d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813234044	Marionette	INFO	Stopped listening on port 59230
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813325528	geckodriver	INFO	Listening on 127.0.0.1:59378
+1635813328557	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileD00HKd"
+1635813328953	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileD00HKd\\search.json.mozlz4", (void 0)))
+1635813331228	Marionette	INFO	Listening on port 59387
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813331712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635813333125	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 12748, MediaDecoderStateMachine #1] WARNING: 22694cece40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813338509	Marionette	INFO	Stopped listening on port 59387
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635813474672	geckodriver	INFO	Listening on 127.0.0.1:59573
+1635813477713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileyxxzoU"
+1635813478106	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileyxxzoU\\search.json.mozlz4", (void 0)))
+1635813480321	Marionette	INFO	Listening on port 59583
+1635813480393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813481673	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 16272, MediaDecoderStateMachine #1] WARNING: 1eb9e21fba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813489687	Marionette	INFO	Stopped listening on port 59583
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813561603	geckodriver	INFO	Listening on 127.0.0.1:59722
+1635813564622	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileTInp3w"
+1635813565012	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileTInp3w\\search.json.mozlz4", (void 0)))
+1635813567220	Marionette	INFO	Listening on port 59730
+1635813567310	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813568619	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 8552, MediaDecoderStateMachine #1] WARNING: 1f3e7dd1d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813573215	Marionette	INFO	Stopped listening on port 59730
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635813672329	geckodriver	INFO	Listening on 127.0.0.1:61251
+1635813675366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile3MgC4R"
+1635813675760	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile3MgC4R\\search.json.mozlz4", (void 0)))
+1635813677978	Marionette	INFO	Listening on port 61260
+1635813678040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813679071	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 8948, MediaDecoderStateMachine #1] WARNING: 1f900b9cf20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813684621	Marionette	INFO	Stopped listening on port 61260
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635813759547	geckodriver	INFO	Listening on 127.0.0.1:61369
+1635813762578	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileB9CE1Z"
+1635813762974	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileB9CE1Z\\search.json.mozlz4", (void 0)))
+1635813765194	Marionette	INFO	Listening on port 61377
+1635813765253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813766768	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 9784, MediaDecoderStateMachine #1] WARNING: 1f39de13e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813796424	Marionette	INFO	Stopped listening on port 61377
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813821085	geckodriver	INFO	Listening on 127.0.0.1:61454
+1635813824114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebVZzhP"
+1635813824505	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebVZzhP\\search.json.mozlz4", (void 0)))
+1635813826573	Marionette	INFO	Listening on port 61463
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813826785	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635813827778	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 14308, MediaDecoderStateMachine #1] WARNING: 1ce0db31c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813832698	Marionette	INFO	Stopped listening on port 61463
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635813857133	geckodriver	INFO	Listening on 127.0.0.1:61548
+1635813860156	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileUeEh0Z"
+1635813860552	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileUeEh0Z\\search.json.mozlz4", (void 0)))
+1635813862780	Marionette	INFO	Listening on port 61557
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635813862838	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635813863983	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7696, MediaDecoderStateMachine #1] WARNING: 206dd528f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635813887169	Marionette	INFO	Stopped listening on port 61557
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635814091635	geckodriver	INFO	Listening on 127.0.0.1:55809
+1635814094672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileAqsuDX"
+1635814095066	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileAqsuDX\\search.json.mozlz4", (void 0)))
+1635814097324	Marionette	INFO	Listening on port 55817
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814097842	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635814099188	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6760, MediaDecoderStateMachine #1] WARNING: 2a3a3c04c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814106169	Marionette	INFO	Stopped listening on port 55817
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635814160753	geckodriver	INFO	Listening on 127.0.0.1:55918
+1635814163793	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilettuHIX"
+1635814164182	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilettuHIX\\search.json.mozlz4", (void 0)))
+1635814166446	Marionette	INFO	Listening on port 55927
+1635814166466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814167905	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6944, MediaDecoderStateMachine #1] WARNING: 1f1d3708ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814174624	Marionette	INFO	Stopped listening on port 55927
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635814200275	geckodriver	INFO	Listening on 127.0.0.1:56084
+1635814203305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilerwyfMg"
+1635814203702	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilerwyfMg\\search.json.mozlz4", (void 0)))
+1635814205883	Marionette	INFO	Listening on port 56092
+1635814205955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814207213	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 14908, MediaDecoderStateMachine #1] WARNING: 1ab9012dd60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814229645	Marionette	INFO	Stopped listening on port 56092
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635814262295	geckodriver	INFO	Listening on 127.0.0.1:56199
+1635814265334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileOm9PlU"
+1635814265728	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileOm9PlU\\search.json.mozlz4", (void 0)))
+1635814267970	Marionette	INFO	Listening on port 56208
+1635814268001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814269460	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 11564, MediaDecoderStateMachine #1] WARNING: 1ab003229e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814294149	Marionette	INFO	Stopped listening on port 56208
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1635814386809	geckodriver	INFO	Listening on 127.0.0.1:56360
+1635814389844	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileTgjU2g"
+1635814390241	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileTgjU2g\\search.json.mozlz4", (void 0)))
+1635814392420	Marionette	INFO	Listening on port 56369
+1635814392514	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814393593	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 2204, MediaDecoderStateMachine #1] WARNING: 2d3f3e14e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814406431	Marionette	INFO	Stopped listening on port 56369
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635814422788	geckodriver	INFO	Listening on 127.0.0.1:56487
+1635814425823	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileSsxpih"
+1635814426217	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileSsxpih\\search.json.mozlz4", (void 0)))
+1635814428433	Marionette	INFO	Listening on port 56496
+1635814428481	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814429491	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 14700, MediaDecoderStateMachine #1] WARNING: 288a6070f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814439327	Marionette	INFO	Stopped listening on port 56496
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635814644734	geckodriver	INFO	Listening on 127.0.0.1:52860
+1635814647777	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebumJiJ"
+1635814648167	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebumJiJ\\search.json.mozlz4", (void 0)))
+1635814650315	Marionette	INFO	Listening on port 52869
+1635814650456	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814651702	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 19248, MediaDecoderStateMachine #1] WARNING: 19ac7152c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814663828	Marionette	INFO	Stopped listening on port 52869
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635814735845	geckodriver	INFO	Listening on 127.0.0.1:52966
+1635814738873	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilewryphG"
+1635814739265	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilewryphG\\search.json.mozlz4", (void 0)))
+1635814741414	Marionette	INFO	Listening on port 52974
+1635814741534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814742857	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 15124, MediaDecoderStateMachine #1] WARNING: 272f4578ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814745989	Marionette	INFO	Stopped listening on port 52974
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635814779718	geckodriver	INFO	Listening on 127.0.0.1:53051
+1635814782763	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilezMChab"
+1635814783160	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilezMChab\\search.json.mozlz4", (void 0)))
+1635814785324	Marionette	INFO	Listening on port 53060
+1635814785454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814786835	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6364, MediaDecoderStateMachine #1] WARNING: 2b605cecc80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814789958	Marionette	INFO	Stopped listening on port 53060
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1635814934572	geckodriver	INFO	Listening on 127.0.0.1:53158
+1635814937604	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofiles7glJu"
+1635814937999	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofiles7glJu\\search.json.mozlz4", (void 0)))
+1635814940185	Marionette	INFO	Listening on port 53168
+1635814940265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814941565	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 15488, MediaDecoderStateMachine #1] WARNING: 192dab35e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814944962	Marionette	INFO	Stopped listening on port 53168
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635814971547	geckodriver	INFO	Listening on 127.0.0.1:53240
+1635814974572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileaomdcc"
+1635814974969	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileaomdcc\\search.json.mozlz4", (void 0)))
+1635814977136	Marionette	INFO	Listening on port 53248
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635814977264	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635814978399	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 5580, MediaDecoderStateMachine #1] WARNING: 2796337ec80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635814982710	Marionette	INFO	Stopped listening on port 53248
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635815003612	geckodriver	INFO	Listening on 127.0.0.1:53316
+1635815006650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile58Seji"
+1635815007044	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile58Seji\\search.json.mozlz4", (void 0)))
+1635815009241	Marionette	INFO	Listening on port 53325
+1635815009326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635815010361	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 10032, MediaDecoderStateMachine #1] WARNING: 26fb4de3d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635815013734	Marionette	INFO	Stopped listening on port 53325
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635815014275	geckodriver	INFO	Listening on 127.0.0.1:53389
+1635815017312	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileuE1jcH"
+1635815017709	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileuE1jcH\\search.json.mozlz4", (void 0)))
+1635815019979	Marionette	INFO	Listening on port 53398
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635815020488	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635815021763	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6988, MediaDecoderStateMachine #1] WARNING: 1cbe25a9e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635815024650	Marionette	INFO	Stopped listening on port 53398
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635815025189	geckodriver	INFO	Listening on 127.0.0.1:53466
+1635815028228	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilezV3FUc"
+1635815028619	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilezV3FUc\\search.json.mozlz4", (void 0)))
+1635815030739	Marionette	INFO	Listening on port 53474
+1635815030884	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635815032174	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7680, MediaDecoderStateMachine #1] WARNING: 1627156cac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635815035356	Marionette	INFO	Stopped listening on port 53474
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635815035913	geckodriver	INFO	Listening on 127.0.0.1:53541
+1635815038941	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileI7t90p"
+1635815039333	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileI7t90p\\search.json.mozlz4", (void 0)))
+1635815041562	Marionette	INFO	Listening on port 53549
+1635815041600	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635815042933	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 10792, MediaDecoderStateMachine #1] WARNING: 216000fee40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635815045968	Marionette	INFO	Stopped listening on port 53549
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 10580, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635815046531	geckodriver	INFO	Listening on 127.0.0.1:53611
+1635815049561	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile7UaJtM"
+1635815049960	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile7UaJtM\\search.json.mozlz4", (void 0)))
+1635815052136	Marionette	INFO	Listening on port 53619
+1635815052227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1635815053416	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 14516, MediaDecoderStateMachine #1] WARNING: 1e802e45120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1635815056536	Marionette	INFO	Stopped listening on port 53619
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
