@@ -34,7 +34,6 @@ super();
   }
 }
 
-
 async componentDidMount() { 
   query = await fetch("http://18.220.53.238:5000/get"); 
   json = await query.json(); 
@@ -43,6 +42,7 @@ async componentDidMount() {
     LotData: json
   })
 }
+
 
   render() {
     console.log(this.state.LotData);

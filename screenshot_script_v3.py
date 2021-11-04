@@ -19,7 +19,7 @@ def getScreenshot(url, num):
 
 #SETUP & OPTIONS -------------------------------------
     options = FirefoxOptions()
-    #options.add_argument("--headless") #comment out to view while it runs
+    options.add_argument("--headless") #comment out to view while it runs
     driver = webdriver.Firefox(options=options, executable_path=r'C:\Users\lucym\Documents\code\SeleniumPython\geckodriver.exe') #tells where the driver for firefox is 
 
 #RANDOMIZATION -------------------------------------
