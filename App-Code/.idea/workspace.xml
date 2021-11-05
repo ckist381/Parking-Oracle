@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="664c9e5b-b3bf-47e5-bb6a-0f012d24a458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/byPass.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/byPass.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-23" y="86" width="1200" height="763" key="AVDManager" timestamp="1636066174616">
+    <state x="-23" y="86" width="1200" height="763" key="AVDManager" timestamp="1636129372638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-23" y="86" width="1200" height="763" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636066174616" />
+    <state x="-23" y="86" width="1200" height="763" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636129372638" />
     <state x="252" y="277" key="FileChooserDialogImpl" timestamp="1633447400516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -3,7 +3,7 @@ Filename: styles.js
 Original Author: Lukas H.
 Date of Creation: 7/3/2021
 Description: Stylesheet for parking oracle mobile app
-Last Edit: 10/18/2021
+Last Edit: 11/5/2021
 -------------------------------------*/
 
 import styled from 'styled-components/native';
@@ -56,6 +56,7 @@ export const SubTitle = styled.Text`
     margin-bottom: 20px;
     letter-spacing:1px;
     font-weight: bold;
+    text-align: center;
     color: ${secondary};
 `;
 
