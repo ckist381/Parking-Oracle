@@ -33,7 +33,7 @@ results.all = () =>
 results.pass = () => 
 { 
     return new Promise((resolve, reject) => { 
-        pool.query("SELECT * FROM ByPasses LEFT JOIN lot ON ByPasses.lotName = lot.name " , function (err, result){ 
+        pool.query("SELECT lotName, pass, fullPer FROM ByPasses LEFT JOIN lot ON ByPasses.lotName = lot.name " , function (err, result){ 
             if (err){ 
                 return reject(err); 
             }
