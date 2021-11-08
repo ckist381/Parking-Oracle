@@ -19,11 +19,7 @@ import {
 
 //Array of Test Day (will be replaced with database data later)
 const LotTestInfo = [
-  { name: "Lot A", fullness: 50, pass: "A" },
-  { name: "Lot B", fullness: 100, pass: "A"},
-  { name: "Lot C", fullness: 69, pass: "H" },
-  { name: "Lot D", fullness: 70, pass: "F" },
-  { name: "Lot E", fullness: 69, pass: "P" },
+ 
 ];
 
 //get a list of passes that's unique (used in dropdown)
@@ -74,22 +70,25 @@ super();
   }
 }
 
-/*
 async componentDidMount() { 
-  query = await fetch("http://18.220.53.238:5000/get"); 
+  query = await fetch("http://10.0.0.207:5000/pass"); 
+
   json = await query.json(); 
-  json = json.lots; 
+
+  json = json.passes; 
+
   this.setState({ 
+
     LotData: json
   })
 }
-*/
+
 
   render() {    
 
     const renderSelectedLots = this.state.selectedLotData.map((lot)=> 
       <View>
-        <Text>Lot Name: {lot.name} / Lot Fullness: {lot.fullness}  / Required Pass: {lot.pass}{'\n'}</Text>      
+        <Text>Lot Name: {lot.lotName} / Lot Fullness: {lot.fullPer}  / Required Pass: {lot.pass}{'\n'}</Text>      
       </View>
     );
 
