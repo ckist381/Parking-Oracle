@@ -20,23 +20,28 @@ let results = {};
 results.all = () => 
 { 
     return new Promise((resolve, reject) => { 
-    
-        
-
         pool.query("SELECT * FROM lot" , function (err, result){ 
             if (err){ 
                 return reject(err); 
             }
-
             console.log(result)
             return resolve(result);
         }); 
-
-         
-        
     }); 
 }  
 
+results.pass = () => 
+{ 
+    return new Promise((resolve, reject) => { 
+        pool.query("SELECT lotName, pass, fullPer FROM ByPasses LEFT JOIN lot ON ByPasses.lotName = lot.name " , function (err, result){ 
+            if (err){ 
+                return reject(err); 
+            }
+            console.log(result)
+            return resolve(result);
+        }); 
+    }); 
+}  
 
 
 

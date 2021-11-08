@@ -21,13 +21,25 @@ app.get('/get', async function(req, res) {
 
           console.log(result); 
           res.json({lots: result}); 
-
-
      } 
      catch(err){ 
           console.log(err); 
      }
+}); 
 
+app.get('/pass', async function(req, res) { 
+
+     try { 
+          let result = await DB.pass();
+
+          json(result); 
+
+          console.log(result); 
+          res.json({passes: result}); 
+     } 
+     catch(err){ 
+          console.log(err); 
+     }
 }); 
 
  
