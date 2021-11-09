@@ -17,24 +17,6 @@ import {
   dropDownContainer
 } from './styles';
 
-//Array of Test Day (will be replaced with database data later)
-const LotTestInfo = [
-  { name: "Lot A", fullness: 50, pass: "A" },
-  { name: "Lot B", fullness: 100, pass: "A"},
-  { name: "Lot C", fullness: 69, pass: "H" },
-  { name: "Lot D", fullness: 70, pass: "F" },
-  { name: "Lot E", fullness: 69, pass: "P" },
-];
-
-//get a list of passes that's unique (used in dropdown)
-//snatched code from here
-//https://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
-
-let uniquePassSet = [...new Set(LotTestInfo.map(item => item.pass))];
-//console.log("Unique passes : " + uniquePassSet); //debug
-
-//then upon selecting that pass, find all the Lots that have that pass and put them in an array of objects
-
 // ----------------------------- 
 //  getRequestedLots -> 
 //    Test if the selected pass exists in the array of Lots and store 
@@ -66,35 +48,47 @@ super();
   this.state = {
 
     //array of objects containing values    
-    LotData : LotTestInfo,    
+    LotData : [],    
     selectedLotData: [],
     selectedLotName: '',
     selectedLotFullness: 0,
     selectedLotPass: '',
   }
 }
-
-/*
-async componentDidMount() { 
-  query = await fetch("http://18.220.53.238:5000/get"); 
+async componentDidMount() {   
+  query = await fetch("http://156.12.180.67:5000/pass"); 
   json = await query.json(); 
-  json = json.lots; 
+  json = json.passes; 
+  console.log("doing a thing");
+  console.log(json);
   this.setState({ 
     LotData: json
   })
 }
-*/
 
   render() {    
 
+    console.log("rending page");
+
     const renderSelectedLots = this.state.selectedLotData.map((lot)=> 
       <View>
-        <Text>Lot Name: {lot.name} / Lot Fullness: {lot.fullness}  / Required Pass: {lot.pass}{'\n'}</Text>      
+        <Text>Lot Name: {lot.lotName} / Lot Fullness: {lot.fullper}  / Required Pass: {lot.pass}{'\n'}</Text>      
       </View>
     );
 
+    //get a list of passes that's unique (used in dropdown)
+    //snatched code from here
+    //https://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
+
+    let uniquePassSet = [...new Set(this.state.LotData.map(item => item.pass))];
+    //then upon selecting that pass, find all the Lots that have that pass and put them in an array of objects
+
+    console.log(this.state.LotData);
+
     return (  
-      <StyledContainer> 
+      
+      <StyledContainer>         
+        
         {/*header*/}        
         <View style={{alignItems:'center'}}>           
                 <PageTitle>Pick by Pass</PageTitle>
