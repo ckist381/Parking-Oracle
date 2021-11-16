@@ -3,18 +3,21 @@ Filename: byLot.js
 Original Author: Lukas H.
 Date of Creation: 7/6/2021
 Description: Page that displays parking lot fullness by lot
-Last Edit: 10/23/2021
+Last Edit: 11/16/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Linking } from 'react-native';
 import Picker from 'react-native-universal-picker';
 
 import {
   StyledContainer,
   PageTitle,
   SubTitle,
-  dropDownContainer
+  dropDownContainer,  
+  StyledButton,
+  ButtonText,
+  ErrorButtonContainer
 } from './styles';
 
 export default class byLotScreen extends Component {
@@ -36,16 +39,10 @@ super();
 
 
 async componentDidMount() { 
-
-
   query = await fetch("http://18.220.53.238:5000/get"); 
-
   json = await query.json(); 
-
   json = json.lots; 
-
   this.setState({ 
-
     LotData: json
   })
 }
@@ -91,7 +88,13 @@ async componentDidMount() {
         */}
         
       {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}
-          
+        
+      <ErrorButtonContainer>
+        <Text style={{textAlign: 'center', color: '#999', fontSize:12}}>Is something broken?  {'\n'}Does the fulness not look right to you?  {'\n'}{'\n'}Click below to report an error and we'll do our best to get back to you!</Text>
+        <StyledButton onPress={() => Linking.openURL('mailto:parkingoracleteam@gmail.com?subject=[App Support] I\'d like to report an error!')} title="parkingoracleteam@gmail.com">
+          <ButtonText>Report An Error</ButtonText></StyledButton>
+      </ErrorButtonContainer>
+
       </StyledContainer>   
     )
   }

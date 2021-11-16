@@ -3,18 +3,21 @@ Filename: byPass.js
 Original Author: Lukas H.
 Date of Creation: 7/6/2021
 Description: Page that displays parking lot fullness by pass type
-Last Edit: 11/5/2021
+Last Edit: 11/16/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Linking } from 'react-native';
 import Picker from 'react-native-universal-picker';
 
 import {
   StyledContainer,
   PageTitle,
   SubTitle,
-  dropDownContainer
+  dropDownContainer,
+  StyledButton,
+  ButtonText,
+  ErrorButtonContainer
 } from './styles';
 
 // ----------------------------- 
@@ -122,6 +125,12 @@ async componentDidMount() {
       
       {this.state.selectedLotPass == '' ?  <View/> : <View style={{alignContent: "center", margin:10}}><Text style={{textAlign: "center"}}>Pass {this.state.selectedLotPass} is selected.{'\n'}These are the lots associated with that pass: </Text></View>}
       <View style={{alignItems:'center', margin:10, textAlign: 'center'}}><Text>{renderSelectedLots}</Text></View>      
+      
+      <ErrorButtonContainer>
+        <Text style={{textAlign: 'center', color: '#999', fontSize:12}}>Is something broken?  {'\n'}Does the fulness not look right to you?  {'\n'}{'\n'}Click below to report an error and we'll do our best to get back to you!</Text>
+        <StyledButton onPress={() => Linking.openURL('mailto:parkingoracleteam@gmail.com?subject=[App Support] I\'d like to report an error!')} title="parkingoracleteam@gmail.com">
+          <ButtonText>Report An Error</ButtonText></StyledButton>
+      </ErrorButtonContainer>
       </StyledContainer>   
     )
   }

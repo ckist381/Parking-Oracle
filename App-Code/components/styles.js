@@ -3,7 +3,7 @@ Filename: styles.js
 Original Author: Lukas H.
 Date of Creation: 7/3/2021
 Description: Stylesheet for parking oracle mobile app
-Last Edit: 11/5/2021
+Last Edit: 11/16/2021
 -------------------------------------*/
 
 import styled from 'styled-components/native';
@@ -31,6 +31,22 @@ export const StyledContainer = styled.View`
     borderTopWidth: 0px;
     borderBottomWidth: 0px;
     justify-content: center;
+    padding: 30px;
+`;
+
+export const StyledButton = styled.TouchableOpacity`
+    background-color: ${red};  
+    padding: 20px;
+    justify-content: center;
+    borderRadius: 5px;
+    margin: 10px;  
+    height: 40px;    
+`;
+
+export const ButtonText = styled.Text`
+    color: ${white};    
+    font-size: 14px;
+    textAlign: center;
 `;
 
 export const BigPageLogo = styled.Image`
@@ -74,48 +90,19 @@ export const RightIcon = styled.TouchableOpacity`
     z-index: 1;
 `;
 
-export const StyledButton = styled.TouchableOpacity`
-    background-color: ${red};  
-    padding: 20px;
-    justify-content: center;
-    borderRadius: 5px;
-    margin: 10px;  
-    height: 40px;    
-`;
-
-export const ErrorButton = styled.TouchableOpacity`
-    background-color: ${red};
-    padding: 20px;
-    borderRadius: 5px;
-    height: 40px;    
-    position: absolute;   
-    justify-content: center;     
-    top: 30px;
-    right: 10px;
-    margin: 10px; 
-`;
-
-export const ButtonText = styled.Text`
-    color: ${white};    
-    font-size: 14px;
-`;
-
-//Table Styles
-
-export const TableHeading = styled.View`    
-    backgroundColor: ${red};
-`;
-
-export const TableHeadingText = styled.Text`
-    color: '${white}';
-    textAlign: center;
-`;
-
-export const TableText = styled.Text`
-    textAlign: center;
-`;
+//Dropdown Menu -----------------------------------------------
 
 export const dropDownContainer = styled.Picker`    
     position: absolute;
     margin: 50px;
 `;
+
+//Error Button -----------------------------------------------
+
+export const ErrorButtonContainer = styled.View`
+    flex: 1; 
+    justify-content: center;
+    textAlign: center;
+`;
+
+

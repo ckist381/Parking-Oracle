@@ -3,7 +3,7 @@ Filename: Home.js
 Original Author: Lukas H.
 Date of Creation: 6/15/2021
 Description: Welcome/Landing page for the parking oracle mobile app 
-Last Edit: 10/31/2021
+Last Edit: 11/16/2021
 -------------------------------------*/
 
 // Homescreen.js
@@ -12,7 +12,7 @@ import { View } from 'react-native';
 
 //importing all the styles
 import {
-    StyledContainer, BigPageLogo, PageTitle, SubTitle, StyledButton, ErrorButton, Colors, ButtonText
+    StyledContainer, BigPageLogo, PageTitle, SubTitle, StyledButton, Colors, ButtonText
 } from './styles';
 
 //colors
