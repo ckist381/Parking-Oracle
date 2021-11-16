@@ -1,6 +1,6 @@
 #------------------------------------
 # created 4/17/2021
-# last edit: 5/5/2021 
+# last edit: 11/4/2021 
 
 #no window: 
 #https://sqa.stackexchange.com/questions/2609/running-webdriver-without-opening-actual-browser-window
@@ -15,6 +15,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 import time
 import os
 import MySQLDatabaseScript 
+import random
 
 def getScreenshot(url, num, filename):
 
@@ -25,6 +26,13 @@ def getScreenshot(url, num, filename):
     options = FirefoxOptions()
     options.add_argument("--headless") #comment out to view while it runs
     driver = webdriver.Firefox(options=options, executable_path=current_directory) #tells where the driver for firefox is 
+
+#RANDOMIZATION -------------------------------------
+    timestampOptions = [1,2,3]
+    #timeoption = 2 #debugging -> undo comment to set to specific option
+    timeoption = random.choice(timestampOptions)
+    #choose between begining, middle, or end of video.
+    print("Timestamp has been chosen: ", timeoption)
 
 #LOADING -------------------------------------
     driver.get(url)   
@@ -49,7 +57,33 @@ def getScreenshot(url, num, filename):
         print("Page is ready to be captured.")
 
 #TAKING SCREENSHOTS -------------------------
-    time.sleep(1) #buffer so video can load
+    #RANDOMIZING TIME -----------------------
+    currentTime = driver.find_element_by_class_name("ytp-time-current").text
+    print("Current Time in Video is ", currentTime )
+
+    #get the length of the video, split by the : (since it returns a string of the time) and store
+    vidLength = driver.find_element_by_class_name("ytp-time-duration").text
+    vidLength = vidLength.split(':')[1]
+    #print("Video Length is ", vidLength) #debug -> remove to view how long video is
+
+    if(timeoption == 1):
+        #scroll to begining
+        print("Remaining at the begining")        
+    elif(timeoption == 2):
+        #scroll to middle
+        vidLength = str(int(vidLength)/2)
+        print("Scrolling to halfway")
+        driver.execute_script("document.getElementsByTagName('video')[0].currentTime += "+ vidLength)
+        currentTime = driver.find_element_by_class_name("ytp-time-current").text
+        print("Current Time in Video is ", currentTime )
+    else:
+        #scroll to end
+        print("Scrolling to end")
+        driver.execute_script("document.getElementsByTagName('video')[0].currentTime += "+ vidLength)
+        currentTime = driver.find_element_by_class_name("ytp-time-current").text
+        print("Current Time in Video is ", currentTime )
+    
+    time.sleep(2) #buffer so video can load    
     driver.save_screenshot(filename)
     print("Screenshot Captured")
     driver.quit()
