@@ -101,7 +101,7 @@ def updateSpaces (name, spacesTaken):
     # executing the sql statement with parameters passed in
     mycursor.execute(sql, data)
     # committing (saving) the sql results to database
-    db.commit
+    db.commit()
 
 # this function will take a name of a lot and the filename of said lot from
 # the vision system and will update the file name (if need be)
