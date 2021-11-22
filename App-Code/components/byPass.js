@@ -59,7 +59,7 @@ super();
   }
 }
 async componentDidMount() {   
-  query = await fetch("http://156.12.180.67:5000/pass"); 
+  query = await fetch("http://18.220.53.238:5000/pass"); 
   json = await query.json(); 
   json = json.passes; 
   console.log("doing a thing");
