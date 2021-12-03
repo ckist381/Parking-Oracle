@@ -78,7 +78,7 @@ def getScreenshot(url, num, filename):
         print("Current Time in Video is ", currentTime )
     else:
         #scroll to end
-        vidLength = str(int(vidLength-2)) #doesn't scroll all the way to the end just so there's still stuff to load in
+        vidLength = str(int(vidLength)-2) #doesn't scroll all the way to the end just so there's still stuff to load in
         print("Scrolling to end")
         driver.execute_script("document.getElementsByTagName('video')[0].currentTime += "+ vidLength)
         currentTime = driver.find_element_by_class_name("ytp-time-current").text

@@ -59,7 +59,8 @@ def showByPasses():
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
 def setFullness(lotID, name, spacesTaken, fullPer, filename, url):
-    sql = "INSERT INTO lot (lotID, name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s, %s)"
+    sql = "INSERT INTO lot (lotID, name, spacesTaken, fullPer, filename, url) VAL\
+UES (%s, %s, %s, %s, %s, %s)"
     val = (lotID, name, spacesTaken, fullPer, filename, url)
     mycursor.execute(sql, val)
 
@@ -164,7 +165,8 @@ def getSpacesTaken(name):
 # this function will return a list of the names of parking lots inside the 
 # database inside a list
 # executes the sql statement, fetches all returned items, indexes them puts them 
-# into a list and returns the list
+# into a list and
+# returns the list
 def getNames():
     sql = "SELECT name FROM lot"
     mycursor.execute(sql)
@@ -183,16 +185,13 @@ def getNames():
 # executes the sql statement, fetches all returned items, indexes them puts them into a list and
 # returns the list
 def getURLs():
-    sql = "SELECT url FROM lot"
+    sql = "SELECT filename, url FROM lot"
     mycursor.execute(sql)
     Lurls = []
     Turls = mycursor.fetchall()
-    for i in range(len(Turls)):
-        urlTuple = Turls[i]
-        urlItem = urlTuple[0]
-        Lurls.append(urlItem)
-    print (Lurls)
-    return Lurls
+    
+    print (Turls)
+    return Turls
     pass
 
 # this is a function where you can manually delete entries from the database as
@@ -214,7 +213,7 @@ def main():
 
     #alterDatabase()
 
-    #setFullness(2, "testlot", 11, 0.0, "testlot.png", "https://www.youtube.com/watch?v=bhm1Y0pgs-c")
+    #setFullness(2, "testlot", 11, 0.0, "testlot.png", "https://www.youtube.com/w\atch?v=bhm1Y0pgs-c")
 
     #setByPasses("Lot E2", "G")
 

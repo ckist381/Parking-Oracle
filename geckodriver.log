@@ -668,3 +668,158 @@ JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1638564760132	geckodriver	INFO	Listening on 127.0.0.1:57762
+1638564763161	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileITo7zT"
+*** You are running in headless mode.
+1638564763517	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileITo7zT\\search.json.mozlz4", (void 0)))
+1638564764477	Marionette	INFO	Listening on port 57771
+1638564764689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileYVmbGy"
+*** You are running in headless mode.
+1638565000055	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileYVmbGy\\search.json.mozlz4", (void 0)))
+1638565000997	Marionette	INFO	Listening on port 60730
+1638565001259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1638567419204	geckodriver	INFO	Listening on 127.0.0.1:64387
+1638567422237	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebs2H4l"
+*** You are running in headless mode.
+1638567422577	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilebs2H4l\\search.json.mozlz4", (void 0)))
+1638567423513	Marionette	INFO	Listening on port 64395
+1638567423779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567424851	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 16388, MediaDecoderStateMachine #1] WARNING: 22f2b84a120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567427644	Marionette	INFO	Stopped listening on port 64395
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638567428160	geckodriver	INFO	Listening on 127.0.0.1:64489
+1638567431198	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofiles2qHc8"
+*** You are running in headless mode.
+1638567431541	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofiles2qHc8\\search.json.mozlz4", (void 0)))
+1638567432463	Marionette	INFO	Listening on port 64497
+1638567432735	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567433807	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 17844, MediaDecoderStateMachine #1] WARNING: 1bf0484b820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567436568	Marionette	INFO	Stopped listening on port 64497
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638567437077	geckodriver	INFO	Listening on 127.0.0.1:64576
+1638567440120	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile59i8xg"
+*** You are running in headless mode.
+1638567440455	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofile59i8xg\\search.json.mozlz4", (void 0)))
+1638567441379	Marionette	INFO	Listening on port 64586
+1638567441649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567442544	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7676, MediaDecoderStateMachine #1] WARNING: 1bd36284e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567445235	Marionette	INFO	Stopped listening on port 64586
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638567445755	geckodriver	INFO	Listening on 127.0.0.1:64665
+1638567448788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilee7ahRU"
+*** You are running in headless mode.
+1638567449128	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilee7ahRU\\search.json.mozlz4", (void 0)))
+1638567450078	Marionette	INFO	Listening on port 64673
+1638567450345	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567451286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 6364, MediaDecoderStateMachine #1] WARNING: 22f20a95e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567509393	geckodriver	INFO	Listening on 127.0.0.1:64755
+1638567512423	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileVDLBIR"
+*** You are running in headless mode.
+1638567512758	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileVDLBIR\\search.json.mozlz4", (void 0)))
+1638567513642	Marionette	INFO	Listening on port 64765
+1638567513975	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567514921	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7408, MediaDecoderStateMachine #1] WARNING: 1ecac8b5e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567517812	Marionette	INFO	Stopped listening on port 64765
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638567518332	geckodriver	INFO	Listening on 127.0.0.1:64849
+1638567521363	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilet0j8uh"
+*** You are running in headless mode.
+1638567521703	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofilet0j8uh\\search.json.mozlz4", (void 0)))
+1638567522653	Marionette	INFO	Listening on port 64858
+1638567522898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567523809	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 17236, MediaDecoderStateMachine #1] WARNING: 253bf294e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 17236, MediaDecoderStateMachine #1] WARNING: 253c8a023c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567526833	Marionette	INFO	Stopped listening on port 64858
+1638567527351	geckodriver	INFO	Listening on 127.0.0.1:64941
+1638567530366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileHC8ML9"
+*** You are running in headless mode.
+1638567530705	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileHC8ML9\\search.json.mozlz4", (void 0)))
+1638567531653	Marionette	INFO	Listening on port 64949
+1638567531917	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567532951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 12752, MediaDecoderStateMachine #1] WARNING: 2156a17af20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567535867	Marionette	INFO	Stopped listening on port 64949
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638567536376	geckodriver	INFO	Listening on 127.0.0.1:65026
+1638567539415	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileQrpmKy"
+*** You are running in headless mode.
+1638567539759	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lucym\\AppData\\Local\\Temp\\rust_mozprofileQrpmKy\\search.json.mozlz4", (void 0)))
+1638567540653	Marionette	INFO	Listening on port 65034
+1638567540962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638567542018	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 7536, MediaDecoderStateMachine #1] WARNING: 16019c22200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1638567544693	Marionette	INFO	Stopped listening on port 65034
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
