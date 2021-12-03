@@ -87,7 +87,7 @@ async componentDidMount() {
             also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
         */}
         
-      {this.state.selectedLotName == '' ?  <View/> : <View style={{alignItems:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}
+      <Text style={{alignContent:'center', maxWidth: '75%'}}>{this.state.selectedLotName == '' ?  <View/> : <View style={{textAlign:'center'}}><Text>{this.state.selectedLotName} is selected.  The lot is {this.state.selectedLotFullness * 100}% full.</Text></View>}</Text>
         
       <ErrorButtonContainer>
         <Text style={{textAlign: 'center', color: '#999', fontSize:12}}>Is something broken?  {'\n'}Does the fulness not look right to you?  {'\n'}{'\n'}Click below to report an error and we'll do our best to get back to you!</Text>

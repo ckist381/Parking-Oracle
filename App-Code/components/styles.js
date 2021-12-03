@@ -103,6 +103,6 @@ export const ErrorButtonContainer = styled.View`
     flex: 1; 
     justify-content: center;
     textAlign: center;
+    margin: 10px;
 `;
-
 

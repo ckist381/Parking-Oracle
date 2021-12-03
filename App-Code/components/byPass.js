@@ -7,7 +7,7 @@ Last Edit: 11/16/2021
 -------------------------------------*/
 
 import React, { Component } from 'react';
-import { View, Text, Linking } from 'react-native';
+import { View, Text, Linking, ScrollView } from 'react-native';
 import Picker from 'react-native-universal-picker';
 
 import {
@@ -74,9 +74,7 @@ async componentDidMount() {
     console.log("rending page");
 
     const renderSelectedLots = this.state.selectedLotData.map((lot)=> 
-      <View>
-        <Text>Lot Name: {lot.lotName} / Lot Fullness: {lot.fullper}  / Required Pass: {lot.pass}{'\n'}</Text>      
-      </View>
+      <Text style={{textAlign: 'center'}}>{lot.lotName} {'\n'} Lot Fullness: {lot.fullper}  | Required Pass: {lot.pass}</Text> 
     );
 
     //get a list of passes that's unique (used in dropdown)
@@ -90,47 +88,51 @@ async componentDidMount() {
 
     return (  
       
-      <StyledContainer>         
+      <StyledContainer>
+        <ScrollView>         
         
-        {/*header*/}        
-        <View style={{alignItems:'center'}}>           
-                <PageTitle>Pick by Pass</PageTitle>
-                <SubTitle style={{margin:10}}>Select what pass you would like to view the lot information for.</SubTitle>
-        </View>
+          {/*header*/}        
+          <View style={{alignItems:'center'}}>           
+                  <PageTitle>Pick by Pass</PageTitle>
+                  <SubTitle style={{margin:10}}>Select what pass you would like to view the lot information for.</SubTitle>
+          </View>
 
-        {/*dropdown menu (using array listed above)*/}
-        <View style={{dropDownContainer}}>
-        {/*maps array values for LotNames to picker items*/}
-        { <Picker 
-            selectedValue={this.state.selectedLotPass}
-            onValueChange={(itemValue) => this.setState({selectedLotData:getRequestedLots(this.state.LotData, itemValue), selectedLotPass:itemValue})}
-          >
+          {/*dropdown menu (using array listed above)*/}
+          <View style={{dropDownContainer}}>
+          {/*maps array values for LotNames to picker items*/}
+          { <Picker 
+              selectedValue={this.state.selectedLotPass}
+              onValueChange={(itemValue) => this.setState({selectedLotData:getRequestedLots(this.state.LotData, itemValue), selectedLotPass:itemValue})}
+            >
 
-          {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
-          <Picker.Item label="Please Select a Pass" color="#aaa"/>
+            {/* maps values to items in the picker.  The value is the object, so when accessing elements you gotta do item.(member you wanna access)*/}
+            <Picker.Item label="Please Select a Pass" color="#aaa"/>
 
-          {uniquePassSet.map(item => {
-            return(<Picker.Item label={item} value={item} key={item}/>)
-          })}        
+            {uniquePassSet.map(item => {
+              return(<Picker.Item label={item} value={item} key={item}/>)
+            })}        
 
-          </Picker>
-        }
-        </View>
+            </Picker>
+          }
+          </View>
 
-        {/*display based off what was selected            
-          Conditional code: https://stackoverflow.com/questions/44256969/react-native-display-view-depending-on-conditional
-            if something not selected, display nothing.  if something is selected, list the lot and the associated fullness
-            also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
-        */}
-      
-      {this.state.selectedLotPass == '' ?  <View/> : <View style={{alignContent: "center", margin:10}}><Text style={{textAlign: "center"}}>Pass {this.state.selectedLotPass} is selected.{'\n'}These are the lots associated with that pass: </Text></View>}
-      <View style={{alignItems:'center', margin:10, textAlign: 'center'}}><Text>{renderSelectedLots}</Text></View>      
-      
-      <ErrorButtonContainer>
-        <Text style={{textAlign: 'center', color: '#999', fontSize:12}}>Is something broken?  {'\n'}Does the fulness not look right to you?  {'\n'}{'\n'}Click below to report an error and we'll do our best to get back to you!</Text>
-        <StyledButton onPress={() => Linking.openURL('mailto:parkingoracleteam@gmail.com?subject=[App Support] I\'d like to report an error!')} title="parkingoracleteam@gmail.com">
-          <ButtonText>Report An Error</ButtonText></StyledButton>
-      </ErrorButtonContainer>
+          {/*display based off what was selected            
+            Conditional code: https://stackoverflow.com/questions/44256969/react-native-display-view-depending-on-conditional
+              if something not selected, display nothing.  if something is selected, list the lot and the associated fullness
+              also uses the index of the selected lot to get the fullness (assumes arrays are of same size)
+          */}
+        
+        {this.state.selectedLotPass == '' ?  <View/> : <View style={{alignContent: "center", margin:10}}><Text style={{textAlign: "center"}}>Pass {this.state.selectedLotPass} is selected.</Text></View>}
+        <View style={{flex: 1, flexGrow: 0.2, flexDirection:'column', margin: 10}}>{renderSelectedLots}</View>      
+        
+        <ErrorButtonContainer>
+          <View style={{flex:1}}>
+            <Text style={{textAlign: 'center', color: '#999', fontSize:12}}>Is something broken?  {'\n'}Does the fulness not look right to you?  {'\n'}{'\n'}Click below to report an error and we'll do our best to get back to you!</Text>
+            <StyledButton onPress={() => Linking.openURL('mailto:parkingoracleteam@gmail.com?subject=[App Support] I\'d like to report an error!')} title="parkingoracleteam@gmail.com">
+              <ButtonText>Report An Error</ButtonText></StyledButton>
+          </View>
+        </ErrorButtonContainer>
+        </ScrollView>
       </StyledContainer>   
     )
   }
