@@ -181,10 +181,8 @@ def getNames():
 
     pass
 
-# this function will return a list of the urls of parking lots inside the databas\
-e inside a list
-# executes the sql statement, fetches all returned items, indexes them puts them \
-into a list and
+# this function will return a list of the urls of parking lots inside the database inside a list
+# executes the sql statement, fetches all returned items, indexes them puts them into a list and
 # returns the list
 def getURLs():
     sql = "SELECT url FROM lot"
@@ -218,8 +216,7 @@ def main():
 
     #alterDatabase()
 
-    #setFullness(2, "testlot", 11, 0.0, "testlot.png", "https://www.youtube.com/w\
-atch?v=bhm1Y0pgs-c")
+    #setFullness(2, "testlot", 11, 0.0, "testlot.png", "https://www.youtube.com/watch?v=bhm1Y0pgs-c")
 
     #setByPasses("Lot E2", "G")
 
