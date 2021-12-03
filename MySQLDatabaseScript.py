@@ -59,8 +59,7 @@ def showByPasses():
 # the fullness percentage of the lot, and the filename of that lot and will
 # create a new record into the database
 def setFullness(lotID, name, spacesTaken, fullPer, filename, url):
-    sql = "INSERT INTO lot (lotID, name, spacesTaken, fullPer, filename, url) VAL\
-UES (%s, %s, %s, %s, %s, %s)"
+    sql = "INSERT INTO lot (lotID, name, spacesTaken, fullPer, filename, url) VALUES (%s, %s, %s, %s, %s, %s)"
     val = (lotID, name, spacesTaken, fullPer, filename, url)
     mycursor.execute(sql, val)
 
@@ -164,9 +163,8 @@ def getSpacesTaken(name):
 
 # this function will return a list of the names of parking lots inside the 
 # database inside a list
-# executes the sql statement, fetches all returned items, indexes them puts them \
-# into a list and
-# returns the list
+# executes the sql statement, fetches all returned items, indexes them puts them 
+# into a list and returns the list
 def getNames():
     sql = "SELECT name FROM lot"
     mycursor.execute(sql)
