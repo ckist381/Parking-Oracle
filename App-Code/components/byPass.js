@@ -74,7 +74,7 @@ async componentDidMount() {
     console.log("rending page");
 
     const renderSelectedLots = this.state.selectedLotData.map((lot)=> 
-      <Text style={{textAlign: 'center'}}>{lot.lotName} {'\n'} Lot Fullness: {lot.fullper}  | Required Pass: {lot.pass}</Text> 
+      <Text style={{textAlign: 'center'}}>{lot.lotName} {'\n'} Lot Fullness: {lot.fullPer * 100}%  | Required Pass: {lot.pass}</Text> 
     );
 
     //get a list of passes that's unique (used in dropdown)
