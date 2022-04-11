@@ -8,6 +8,6 @@ We want our application, parking oracle, to be a general use parking application
 
 <hr>
 
-<a href="https://docs.google.com/presentation/d/1ULkywlgyOJozi5ayhItesFjQQeKcb58WNcTOQY3QGNU/edit?usp=sharing"> Prototype Presentation</a> - <a href="https://drive.google.com/file/d/1pcmrCY7a3ZzQDrOCK4ArTBGpVG9cY2tH/view?usp=sharing">Video Demonstation of Prototype</a>
+<a href="https://docs.google.com/presentation/d/1ULkywlgyOJozi5ayhItesFjQQeKcb58WNcTOQY3QGNU/edit?usp=sharing"> Prototype Presentation</a> - <a href="https://drive.google.com/file/d/1pcmrCY7a3ZzQDrOCK4ArTBGpVG9cY2tH/view?usp=sharing">Video Demonstation of Prototype</a> - <a href="https://docs.google.com/presentation/d/1cvm6A-uMGVjT3H897yagKKOKwG8OFsKpgPbytvf1ghc/edit?usp=sharing">Demo Day Presentation</a>
 
 <hr>
